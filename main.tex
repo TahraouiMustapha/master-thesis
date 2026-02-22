@@ -96,6 +96,7 @@
 \tableofcontents
 \newpage
 \listoffigures
+\listoftables
 % =================================================
 % =========================
 % Thesis Plan
@@ -494,229 +495,363 @@ These limitations show that DWT techniques provide more robust solutions to Spat
 
 \subsection{Discrete Fourier Transform (DFT)-Based Steganography}
 
-The Discrete Fourier Transform (DFT) represents a fundamental signal processing technique that decomposes an image into its constituent frequency components, providing a global spectral representation of the entire image domain. Unlike block-based transforms such as the Discrete Cosine Transform (DCT), which operate on localized image regions \cite{wallace1992jpeg}, or multi-resolution decomposition techniques like the Discrete Wavelet Transform (DWT) \cite{mallat1989theory}, the DFT analyzes the complete image as a unified entity. This holistic frequency representation confers specific advantages for steganographic applications, particularly regarding robustness to geometric transformations including rotation, translation, and scaling operations \cite{bracewell2000fourier, ruanaidh1998rotation}.
+The Discrete Fourier Transform (DFT) is a signal processing technique that decomposes an
+entire image into its constituent frequency components, producing a global spectral
+representation of the whole image at once. Unlike the DCT, which divides the image into
+independent $8 \times 8$ blocks and processes each separately, the DFT operates on the full
+image as a single entity, so every frequency coefficient carries information about the entire
+spatial domain \cite{bracewell2000fourier}. Unlike the DWT, which separates frequency and
+spatial information simultaneously through multi-resolution decomposition \cite{mallat1999wavelet},
+the DFT provides a purely frequency-domain representation without any spatial localisation.
+This global nature is both the key advantage and the key limitation of DFT-based steganography:
+it confers partial invariance to geometric transformations such as rotation and translation,
+but it also means that a single spatial modification (such as cropping) affects every frequency
+coefficient in the spectrum \cite{ruanaidh1998rotation, petitcolas1999information}.
 
-The application of DFT in steganography leverages the inherent properties of frequency-domain representations, where imperceptible modifications to specific spectral components can encode information while maintaining perceptual similarity to the original cover medium. This approach has been extensively studied in both theoretical and practical contexts, establishing DFT-based methods as a viable alternative to spatial-domain techniques \cite{solachidis2001circularly, marvel1999spread}.
+\subsubsection{Overview of the DFT Representation}
 
-\subsubsection{Mathematical Foundation and Fundamental Concepts}
-
-\paragraph{Two-Dimensional DFT Formulation}
-The two-dimensional DFT transforms a spatial-domain image $I(x,y)$ of dimensions $M \times N$ into a complex-valued frequency-domain representation $F(u,v)$ according to the following definition:
-
-\begin{equation}
-F(u,v) = \frac{1}{MN} \sum_{x=0}^{M-1} \sum_{y=0}^{N-1} I(x,y) \cdot e^{-j2\pi(\frac{ux}{M} + \frac{vy}{N})}
-\end{equation}
-
-where $u$ and $v$ denote the frequency coordinates in the horizontal and vertical directions, respectively, and $j = \sqrt{-1}$ represents the imaginary unit. The inverse DFT reconstructs the spatial-domain image through the following transformation:
-
-\begin{equation}
-I(x,y) = \sum_{u=0}^{M-1} \sum_{v=0}^{N-1} F(u,v) \cdot e^{j2\pi(\frac{ux}{M} + \frac{vy}{N})}
-\end{equation}
-
-\textit{Figure Suggestion:}  
-\textbf{Figure X.1:} Mathematical visualization of 2D DFT basis functions showing sinusoidal patterns at various frequencies and orientations.
-
-\paragraph{Spectral Components and Their Properties}
-Each complex-valued DFT coefficient $F(u,v)$ can be decomposed into magnitude and phase components, expressed as:
+The two-dimensional DFT transforms a spatial-domain image $I(x,y)$ of dimensions
+$M \times N$ into a complex-valued frequency-domain matrix $F(u,v)$ defined as:
 
 \begin{equation}
-F(u,v) = |F(u,v)| \cdot e^{j\phi(u,v)}
+	F(u,v) = \sum_{x=0}^{M-1} \sum_{y=0}^{N-1} I(x,y)\cdot
+	e^{-j2\pi\!\left(\frac{ux}{M}+\frac{vy}{N}\right)},
+	\label{eq:dft_forward}
 \end{equation}
 
-where $|F(u,v)|$ represents the magnitude spectrum and $\phi(u,v)$ denotes the phase spectrum. These components encode distinct perceptual characteristics of the image:
+where $u$ and $v$ are the horizontal and vertical frequency indices, and
+$j = \sqrt{-1}$. The inverse DFT reconstructs the spatial image from the spectrum:
+
+\begin{equation}
+	I(x,y) = \frac{1}{MN}\sum_{u=0}^{M-1} \sum_{v=0}^{N-1} F(u,v)\cdot
+	e^{\,j2\pi\!\left(\frac{ux}{M}+\frac{vy}{N}\right)}.
+	\label{eq:dft_inverse}
+\end{equation}
+
+Each complex coefficient $F(u,v)$ can be separated into two components that carry
+different types of image information:
+
+\begin{equation}
+	F(u,v) = |F(u,v)| \cdot e^{\,j\,\phi(u,v)},
+	\label{eq:dft_polar}
+\end{equation}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{figure_2Z_dft.png}
+	\caption{Mathematical visualization of 2D DFT basis functions showing
+		sinusoidal patterns at various frequencies and orientations.}
+	\label{fig:dft_process}
+\end{figure}
+
+where $|F(u,v)|$ is the \textbf{magnitude spectrum} and $\phi(u,v)$ is the \textbf{phase
+	spectrum}. The magnitude encodes the strength of each frequency component — how much energy
+the image contains at that frequency — while the phase encodes the spatial positions and
+structural relationships of image features \cite{oppenheim1981importance}. Research has shown
+that the phase spectrum preserves the majority of perceptual information: an image
+reconstructed from phase alone is recognisable, while an image reconstructed from magnitude
+alone is not. This finding directly shapes the DFT embedding strategy: steganographic
+modifications are applied to the \textbf{magnitude spectrum only}, leaving the phase
+unchanged in order to preserve visual quality.
+
+Like DCT and DWT, the DFT frequency plane is partitioned into three regions based on
+distance from the centre (DC component at $u=v=0$ after centring):
 
 \begin{itemize}
-    \item \textbf{Magnitude Spectrum:} Quantifies the strength or energy associated with each frequency component, primarily governing contrast distribution, texture patterns, and overall intensity variations across the image \cite{oppenheim1981importance}.
-    
-    \item \textbf{Phase Spectrum:} Encodes the spatial structure, edge locations, and positional relationships between image features. Research has demonstrated that the phase spectrum preserves the majority of perceptual information and structural content \cite{oppenheim1981importance,kovesi1999image}.
+	\item \textbf{Low-frequency region:} Near the centre. Encodes smooth intensity variations
+	and the overall brightness of the image. Modifying this region produces clearly
+	visible intensity shifts.
+	\item \textbf{Mid-frequency region:} Intermediate distance from the centre. Corresponds
+	to edges, object boundaries, and texture structure. This is the preferred embedding
+	zone, offering a balance between imperceptibility and robustness \cite{marvel1999spread}.
+	\item \textbf{High-frequency region:} Periphery of the spectrum. Captures fine textures
+	and noise-like detail. Invisible to modify, but easily destroyed by low-pass
+	filtering and JPEG compression.
 \end{itemize}
 
-The fundamental observation that phase information dominates human visual perception has profound implications for steganography. Consequently, most DFT-based steganographic schemes modify the magnitude spectrum while carefully preserving phase relationships, thereby maintaining visual fidelity and structural integrity \cite{oppenheim1981importance, pitas1996applying}.
+% --- FIGURE 1: DFT magnitude spectrum of a natural image (external image needed) ---
+% Title: "DFT magnitude spectrum of a natural image (log scale)"
+% Description for your search:
+%   A side-by-side showing (a) a natural greyscale image and (b) its centred 2D DFT
+%   magnitude spectrum displayed on a log scale, with the low-, mid-, and high-frequency
+%   regions annotated by concentric rings or brackets. The spectrum should be bright at
+%   the centre fading to dark at the edges. Search terms: "2D DFT magnitude spectrum
+%   image processing annotated frequency regions" or generate with Python/Matplotlib:
+%   np.log(1 + np.abs(np.fft.fftshift(np.fft.fft2(img))))
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.85\textwidth]{dft_magnitude_spectrum.png}
+	\caption{Centred 2D DFT magnitude spectrum of a natural image (log scale). The DC
+		component appears as the bright spot at the centre. Low-frequency coefficients
+		cluster near the centre, mid-frequency coefficients occupy the intermediate ring,
+		and high-frequency coefficients are located at the periphery. Steganographic
+		embedding targets the mid-frequency ring to balance robustness and imperceptibility.}
+	\label{fig:dft_spectrum}
+\end{figure}
 
-\textit{Figure Suggestion:}  
-\textbf{Figure X.2:} Comparative visualization demonstrating: (a) original spatial-domain image, (b) magnitude spectrum representation, (c) phase spectrum representation, (d) image reconstructed from magnitude only, (e) image reconstructed from phase only, illustrating the dominance of phase information in perceptual quality.
+\subsubsection{Embedding Process in DFT-Based Steganography}
 
-\subsubsection{Frequency Domain Characteristics and Embedding Regions}
+The embedding procedure for DFT-based steganography follows a structured sequence of steps
+analogous to those used in DCT-based methods:
 
-\paragraph{Spatial-Frequency Correspondence}
-The DFT frequency plane exhibits a systematic organization wherein spatial frequency increases with distance from the origin (DC component). This organization partitions the spectrum into distinct regions with specific perceptual and statistical properties \cite{gonzalez2008digital}:
-
-\begin{itemize}
-    \item \textbf{Low-Frequency Region:} Located near the spectrum center, these components encode smooth intensity variations, background illumination, and coarse image structure. The DC component $F(0,0)$ represents the average intensity across the entire image.
-    
-    \item \textbf{Mid-Frequency Region:} Situated at intermediate distances from the origin, these components correspond to edges, boundaries, and structural details that define object contours and significant image features.
-    
-    \item \textbf{High-Frequency Region:} Positioned at the spectrum periphery, these components capture fine textures, rapid intensity transitions, and high-detail patterns. These regions are particularly susceptible to noise and compression artifacts \cite{petitcolas1999information}.
-\end{itemize}
-
-\textit{Figure Suggestion:}  
-\textbf{Figure X.3:} Annotated DFT magnitude spectrum showing the spatial distribution of low-, mid-, and high-frequency regions, with typical embedding zones highlighted.
-
-\paragraph{Strategic Region Selection for Data Embedding}
-The selection of appropriate frequency regions for data embedding constitutes a critical design decision that directly impacts the trade-off between imperceptibility, robustness, and embedding capacity:
-
-\begin{itemize}
-    \item \textbf{Low-Frequency Modifications:} Alterations to low-frequency components typically produce highly visible artifacts, including blocking effects, intensity shifts, and perceptual distortions, making this region unsuitable for covert communication \cite{cox2007digital}.
-    
-    \item \textbf{High-Frequency Modifications:} While changes in high-frequency regions remain imperceptible, these components are highly vulnerable to common signal processing operations such as low-pass filtering, compression, and additive noise \cite{petitcolas1999information}.
-    
-    \item \textbf{Mid-Frequency Selection:} The mid-frequency region offers an optimal compromise, providing sufficient robustness against moderate signal processing while maintaining imperceptibility. This region has emerged as the preferred embedding domain in most DFT-based steganographic systems \cite{marvel1999spread, solachidis2001circularly}.
-\end{itemize}
-
-\textit{Figure Suggestion:}  
-\textbf{Figure X.4:} Visual comparison of stego-images with data embedded in different frequency regions, demonstrating perceptual quality differences and artifact characteristics.
-
-\subsubsection{Data Embedding Methodology}
-
-The embedding procedure in DFT-based steganography follows a systematic multi-stage process designed to minimize perceptual distortion while ensuring reliable data recovery:
-
-\paragraph{Stage 1: Image Preprocessing}
-The cover image undergoes preprocessing to optimize it for frequency-domain manipulation:
 \begin{enumerate}
-    \item \textbf{Color Space Conversion:} For color images, conversion to grayscale or selection of a specific color channel (typically luminance) reduces computational complexity while exploiting reduced human visual sensitivity in certain channels.
-    
-    \item \textbf{Normalization:} Pixel intensity values are normalized to a standard range to ensure consistent transform properties.
-    
-    \item \textbf{Windowing (Optional):} Application of window functions (e.g., Hamming or Hann windows) may reduce spectral leakage effects \cite{harris1978use}.
+	\item \textbf{Colour Space Conversion:}
+	For colour images, the RGB image is converted to a luminance-chrominance colour space
+	(typically YCbCr). Embedding is performed in the luminance (Y) channel because the human
+	visual system is most sensitive to brightness variations, and the luminance channel carries
+	the most structural information.
+	
+	\item \textbf{Forward DFT:}
+	The 2D DFT is computed for the entire luminance channel using the Fast Fourier Transform
+	(FFT) algorithm, which reduces computational complexity from $\mathcal{O}(M^2N^2)$ to
+	$\mathcal{O}(MN\log(MN))$ \cite{cooley1965algorithm}. The spectrum is centred so that the
+	DC component is at the middle of the matrix, making the frequency regions easier to identify
+	and work with.
+	
+	\item \textbf{Frequency Region Selection:}
+	A set of mid-frequency coefficients is identified for embedding. These are typically
+	defined by a radial band:
+	\begin{equation}
+		\mathcal{R} = \{(u,v) : r_{\min} \leq \sqrt{u^2+v^2} \leq r_{\max}\},
+		\label{eq:dft_region}
+	\end{equation}
+	where $r_{\min}$ and $r_{\max}$ define the inner and outer radii of the embedding annulus.
+	Choosing a circularly symmetric region provides partial robustness to rotation, because
+	rotation in the spatial domain simply rotates the spectrum without moving coefficients
+	out of a concentric ring \cite{solachidis2001circularly}.
+	
+	\item \textbf{Magnitude Modification:}
+	Secret bits are embedded by modifying the magnitude of the selected coefficients while
+	leaving the phase unchanged. A common technique is additive embedding:
+	\begin{equation}
+		|F'(u,v)| = |F(u,v)| + \alpha \cdot b \cdot |F(u,v)|,
+		\label{eq:dft_embed}
+	\end{equation}
+	where $\alpha \in [0.01, 0.1]$ is the embedding strength and $b \in \{0,1\}$ is the
+	secret bit. The phase-preserved stego coefficient is then:
+	\begin{equation}
+		F'(u,v) = |F'(u,v)| \cdot e^{\,j\,\phi(u,v)}.
+		\label{eq:dft_stego_coeff}
+	\end{equation}
+	The conjugate symmetry constraint $F(M-u, N-v) = F^*(u,v)$ must also be maintained to
+	ensure the inverse DFT produces a real-valued image.
+	
+	\item \textbf{Inverse DFT:}
+	The modified spectrum $F'(u,v)$ is transformed back to the spatial domain using the
+	inverse DFT to produce the stego-image. Pixel values are rounded to integers and clipped
+	to the valid intensity range $[0, 255]$ for 8-bit images.
 \end{enumerate}
 
-\paragraph{Stage 2: Forward DFT Computation}
-A two-dimensional DFT is computed using efficient algorithms such as the Fast Fourier Transform (FFT), which reduces computational complexity from $O(N^4)$ to $O(N^2 \log N)$ for an $N \times N$ image \cite{cooley1965algorithm}. The resulting complex-valued spectrum is typically shifted such that low frequencies are centered for intuitive visualization and processing.
+% --- FIGURE 2: DFT embedding pipeline (drawable with TikZ) ---
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[
+		node distance = 0.45cm and 0.7cm,
+		box/.style  = {draw, rounded corners=4pt, fill=blue!10,
+			minimum width=2.6cm, minimum height=0.85cm,
+			align=center, font=\small},
+		proc/.style = {draw, rounded corners=4pt, fill=orange!12,
+			minimum width=2.6cm, minimum height=0.85cm,
+			align=center, font=\small},
+		res/.style  = {draw, rounded corners=4pt, fill=green!12,
+			minimum width=2.6cm, minimum height=0.85cm,
+			align=center, font=\small},
+		arr/.style  = {-{Stealth[length=4.5pt]}, thick},
+		]
+		\node[box]  (img)    {Cover Image\\(spatial)};
+		\node[proc, right=of img]   (cs)     {YCbCr\\Conversion};
+		\node[proc, right=of cs]    (fft)    {Forward\\DFT (FFT)};
+		\node[proc, right=of fft]   (sel)    {Mid-freq.\\Selection};
+		\node[proc, right=of sel]   (mod)    {Magnitude\\Modification};
+		\node[res,  below=0.7cm of mod]  (ifft)   {Inverse\\DFT};
+		\node[res,  left=of ifft]   (stego)  {Stego-Image\\(spatial)};
+		
+		\draw[arr] (img)  -- (cs);
+		\draw[arr] (cs)   -- (fft);
+		\draw[arr] (fft)  -- (sel);
+		\draw[arr] (sel)  -- (mod);
+		\draw[arr] (mod)  -- (ifft);
+		\draw[arr] (ifft) -- (stego);
+		
+		% Secret message input
+		\node[box, above=0.65cm of mod] (msg) {Secret\\Message};
+		\draw[arr] (msg) -- (mod);
+	\end{tikzpicture}
+	\caption{DFT-based embedding pipeline: the cover image is converted to YCbCr, the
+		forward DFT is applied to the luminance channel, mid-frequency magnitude
+		coefficients are modified according to the secret message bits, and the inverse
+		DFT reconstructs the stego-image in the spatial domain.}
+	\label{fig:dft_pipeline}
+\end{figure}
 
-\paragraph{Stage 3: Embedding Region Selection and Coefficient Identification}
-A predefined set of frequency coefficients within the mid-frequency region is identified based on one or more of the following criteria:
-\begin{itemize}
-    \item Magnitude threshold: coefficients with sufficient energy to withstand modifications
-    \item Frequency band definition: specific radial or angular sectors of the spectrum
-    \item Perceptual significance: regions identified through psychovisual modeling \cite{podilchuk2001image}
-    \item Pseudo-random selection: key-based coefficient selection for enhanced security
-\end{itemize}
+\subsubsection{Extraction Process}
 
-\textit{Figure Suggestion:}  
-\textbf{Figure X.5:} Illustration of coefficient selection strategies in the DFT domain, showing various masking patterns and selection criteria.
+Extraction is the inverse of the embedding procedure and requires that the receiver know
+the same embedding parameters (region boundaries $r_{\min}$, $r_{\max}$ and strength $\alpha$):
 
-\paragraph{Stage 4: Magnitude Modification for Data Embedding}
-Secret data bits are embedded through controlled modifications of the magnitude spectrum using one of several established techniques:
-
-\begin{itemize}
-    \item \textbf{Quantization-Based Embedding:} Magnitude values are quantized to discrete levels corresponding to data bits, similar to Quantization Index Modulation (QIM) \cite{chen2001quantization}:
-    \begin{equation}
-    |F'(u,v)| = Q \cdot \left\lfloor \frac{|F(u,v)|}{Q} + \frac{b}{2} \right\rfloor
-    \end{equation}
-    where $Q$ is the quantization step, $b \in \{0,1\}$ is the bit to embed, and $\lfloor \cdot \rfloor$ denotes the floor function.
-    
-    \item \textbf{Additive Embedding:} A scaled embedding strength parameter modulates the magnitude:
-    \begin{equation}
-    |F'(u,v)| = |F(u,v)| + \alpha \cdot b \cdot |F(u,v)|
-    \end{equation}
-    where $\alpha$ controls the embedding strength and typically ranges from 0.01 to 0.1 \cite{barni2001improved}.
-    
-    \item \textbf{Multiplicative Embedding:} The magnitude is scaled by a factor dependent on the data bit:
-    \begin{equation}
-    |F'(u,v)| = |F(u,v)| \cdot (1 + \alpha \cdot (2b - 1))
-    \end{equation}
-    
-    \item \textbf{Phase-Preserved Magnitude Adjustment:} Modifications ensure that the phase spectrum remains unchanged to preserve structural information:
-    \begin{equation}
-    F'(u,v) = |F'(u,v)| \cdot e^{j\phi(u,v)}
-    \end{equation}
-\end{itemize}
-
-\paragraph{Stage 5: Inverse DFT and Stego-Image Generation}
-The modified frequency spectrum $F'(u,v)$ undergoes inverse DFT transformation to reconstruct the stego-image in the spatial domain:
-
-\begin{equation}
-I'(x,y) = \text{IDFT}\{F'(u,v)\}
-\end{equation}
-
-Post-processing steps may include rounding pixel values to integer representations and clipping to valid intensity ranges.
-
-\textit{Figure Suggestion:}  
-\textbf{Figure X.6:} Comprehensive flowchart depicting the complete DFT-based embedding pipeline, from cover image input through preprocessing, DFT computation, magnitude modification, inverse transformation, and stego-image output.
-
-\subsubsection{Data Extraction Methodology}
-
-The extraction process operates as the inverse of the embedding procedure and requires precise knowledge of the embedding parameters:
-
-\paragraph{Extraction Procedure}
 \begin{enumerate}
-    \item \textbf{Stego-Image Reception:} The potentially altered stego-image is received and preprocessed identically to the embedding stage.
-    
-    \item \textbf{Forward DFT Application:} The two-dimensional DFT is computed to obtain the frequency-domain representation.
-    
-    \item \textbf{Coefficient Location:} The same frequency regions and specific coefficients used during embedding are identified using the shared secret key or predetermined pattern.
-    
-    \item \textbf{Data Decoding:} Embedded bits are extracted by analyzing the magnitude values according to the employed embedding method:
-    \begin{itemize}
-        \item For quantization-based methods: detecting which quantization level the magnitude occupies
-        \item For additive/multiplicative methods: comparing magnitudes against thresholds or reference values
-    \end{itemize}
-    
-    \item \textbf{Message Reconstruction:} Extracted bits are assembled to reconstruct the original secret message, including any error correction decoding if employed.
+	\item Convert the received stego-image to the YCbCr colour space and isolate the
+	luminance channel.
+	\item Apply the forward DFT and centre the spectrum.
+	\item Locate the same mid-frequency region $\mathcal{R}$ used during embedding.
+	\item For each selected coefficient $(u,v)$, decode the embedded bit by comparing the
+	received magnitude $|\tilde{F}(u,v)|$ to a decision threshold derived from a
+	reference magnitude (either the original cover magnitude if available, or an
+	estimated reference):
+	\begin{equation}
+		\hat{b} = \begin{cases}
+			1 & \text{if } |\tilde{F}(u,v)| > |\bar{F}(u,v)|(1 + \alpha/2),\\
+			0 & \text{otherwise.}
+		\end{cases}
+		\label{eq:dft_extract}
+	\end{equation}
+	\item Assemble the extracted bits to reconstruct the hidden message.
 \end{enumerate}
 
-\paragraph{Extraction Reliability Factors}
-Successful extraction depends critically on several factors:
-\begin{itemize}
-    \item \textbf{Parameter Consistency:} Identical embedding and extraction parameters (regions, coefficients, quantization steps)
-    \item \textbf{Frequency Preservation:} Maintenance of relative relationships among frequency components
-    \item \textbf{Synchronization:} Proper alignment and identification of embedding locations
-    \item \textbf{Channel Distortion:} Minimal degradation during transmission or storage \cite{cox2007digital}
-\end{itemize}
+Reliable extraction depends on the magnitude relationships between coefficients being
+preserved after transmission. Any attack that alters the relative magnitude values — such
+as JPEG recompression or additive noise — will introduce extraction errors.
 
-\textit{Figure Suggestion:}  
-\textbf{Figure X.7:} Extraction process flowchart showing the symmetric nature of embedding and extraction operations, with emphasis on parameter matching requirements.
+\subsubsection{Geometric Invariance Properties}
 
-\subsubsection{Advantages and Distinctive Properties}
-
-DFT-based steganographic techniques offer several compelling advantages that distinguish them from spatial-domain and other transform-domain approaches:
+The DFT possesses two properties that give DFT-based steganography a natural robustness
+advantage over DCT and DWT methods against certain geometric distortions
+\cite{ruanaidh1998rotation, bracewell2000fourier}:
 
 \begin{itemize}
-    \item \textbf{Geometric Robustness:} The DFT exhibits inherent invariance properties to certain geometric transformations. Specifically, translation in the spatial domain manifests as phase shifts in the frequency domain without affecting magnitudes, while rotation in the spatial domain produces corresponding rotation in the frequency domain \cite{bracewell2000fourier, ruanaidh1998rotation}. This property enables embedding schemes resistant to minor geometric distortions.
-    
-    \item \textbf{Global Representation:} Unlike block-based methods that may introduce blocking artifacts at tile boundaries, the DFT provides a holistic representation that distributes modifications across the entire image, reducing localized distortions \cite{solachidis2001circularly}.
-    
-    \item \textbf{Theoretical Foundation:} The DFT is grounded in well-established Fourier analysis theory, providing rigorous mathematical tools for performance analysis, optimization, and security evaluation \cite{oppenheim1999discrete}.
-    
-    \item \textbf{Frequency-Selective Embedding:} Precise control over which frequency components are modified enables fine-tuned balancing between imperceptibility and robustness based on application requirements \cite{podilchuk2001image}.
-    
-    \item \textbf{Compatibility with Spread Spectrum:} DFT-based methods integrate naturally with spread spectrum techniques, enhancing security and resistance to detection \cite{marvel1999spread, marvel1999spread}.
+	\item \textbf{Translation invariance:} A spatial shift of the image by $(x_0, y_0)$
+	only introduces a phase factor into each DFT coefficient; the magnitude spectrum
+	is completely unchanged:
+	\begin{equation}
+		\text{DFT}\{I(x-x_0, y-y_0)\} = F(u,v)\cdot e^{-j2\pi(ux_0/M + vy_0/N)}.
+		\label{eq:dft_translation}
+	\end{equation}
+	Because embedding is in the magnitude, spatially translated stego-images can be
+	extracted without any re-synchronisation.
+	
+	\item \textbf{Rotation correspondence:} A spatial rotation of the image by angle $\theta$
+	rotates the magnitude spectrum by the same angle $\theta$. If embedding is placed in a
+	circularly symmetric ring $\mathcal{R}$, the embedded coefficients remain in the same
+	ring after rotation, so a rotation-invariant extractor can still locate them
+	\cite{solachidis2001circularly}.
 \end{itemize}
 
-These characteristics make DFT-based steganography particularly suitable for applications requiring resilience against geometric transformations, such as print-scan processes or digital-analog-digital conversion chains \cite{kutter1999digital}.
+% --- FIGURE 3: Rotation invariance (drawable with TikZ) ---
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[scale=0.95]
+		
+		% ---- LEFT: original spectrum ----
+		\node[font=\small\bfseries] at (2.2, 2.8) {Original spectrum};
+		\fill[gray!8] (0,0) rectangle (4.4,4.4);
+		\draw[gray!40] (0,0) rectangle (4.4,4.4);
+		\fill[blue!8]   (2.2,2.2) circle (1.9);
+		\fill[white]    (2.2,2.2) circle (0.55);
+		\fill[yellow!10](2.2,2.2) circle (0.55);
+		% Embedding ring
+		\draw[orange!80!black, very thick, dashed] (2.2,2.2) circle (1.3);
+		\draw[orange!80!black, very thick, dashed] (2.2,2.2) circle (0.85);
+		% Embedded coefficient
+		\fill[red!70] (3.1, 2.7) circle (0.11);
+		\node[font=\footnotesize\bfseries, red!70, right] at (3.2, 2.7) {$E$};
+		% Ring label with pointer arrow
+		\draw[->, gray!60, thin] (3.5, 3.5) -- (2.9, 3.0);
+		\node[font=\footnotesize, orange!80!black, align=left] at (3.9, 3.7)
+		{embedding\\ring $\mathcal{R}$};
+		\node[font=\footnotesize, gray!55] at (2.2, 2.2) {DC};
+		\node[font=\footnotesize] at (2.2, -0.2) {$u$};
+		\node[font=\footnotesize] at (-0.25, 2.2) {$v$};
+		
+		% ---- ARROW ----
+		\draw[-{Stealth[length=6pt]}, very thick, gray!55] (4.7, 2.2) -- (5.6, 2.2);
+		\node[font=\footnotesize, gray!60, above] at (5.15, 2.2) {rotate $\theta$};
+		
+		% ---- RIGHT: after rotation ----
+		\node[font=\small\bfseries] at (8.6, 2.8) {After rotation by $\theta$};
+		\fill[gray!8] (6.2,0) rectangle (10.6,4.4);
+		\draw[gray!40] (6.2,0) rectangle (10.6,4.4);
+		\fill[blue!8]   (8.4,2.2) circle (1.9);
+		\fill[white]    (8.4,2.2) circle (0.55);
+		\fill[yellow!10](8.4,2.2) circle (0.55);
+		% Same ring — unchanged
+		\draw[orange!80!black, very thick, dashed] (8.4,2.2) circle (1.3);
+		\draw[orange!80!black, very thick, dashed] (8.4,2.2) circle (0.85);
+		% Rotated embedded point
+		\fill[red!70] (8.8, 3.35) circle (0.11);
+		\node[font=\footnotesize\bfseries, red!70, right] at (8.9, 3.35) {$E'$};
+		\node[font=\footnotesize, gray!55] at (8.4, 2.2) {DC};
+		\node[font=\footnotesize] at (8.4, -0.2) {$u$};
+		\node[font=\footnotesize] at (5.9, 2.2) {$v$};
+		\node[font=\footnotesize, teal!70!black] at (8.4, -0.5)
+		{Ring $\mathcal{R}$ unchanged; $E'$ still inside};
+		
+	\end{tikzpicture}
+	\caption{Rotation invariance of DFT magnitude-based embedding. Spatial rotation by angle
+		$\theta$ rotates the entire magnitude spectrum by the same angle, moving the
+		embedded coefficient from $E$ to $E'$. Because the embedding ring $\mathcal{R}$
+		is circularly symmetric (dashed orange), $E'$ remains inside $\mathcal{R}$
+		regardless of $\theta$, allowing extraction without any geometric
+		re-synchronisation \cite{solachidis2001circularly}.}
+	\label{fig:dft_rotation}
+\end{figure}
 
-\subsubsection{Limitations, Challenges, and Practical Considerations}
+\subsubsection{Advantages of DFT-Based Steganography}
 
-Despite its advantages, DFT-based steganography faces several significant limitations that constrain its practical applicability:
+DFT-based steganography offers several advantages that distinguish it from DCT and DWT
+methods:
 
 \begin{itemize}
-    \item \textbf{Computational Complexity:} The requirement to process the entire image simultaneously results in substantial computational overhead, particularly for high-resolution images. Even with FFT optimizations, the complexity remains higher than spatial-domain methods \cite{cooley1965algorithm}. Real-time applications may find this prohibitive.
-    
-    \item \textbf{Cropping Vulnerability:} Spatial cropping operations fundamentally alter the frequency representation, as the DFT assumes periodic boundary conditions. Removal of image portions disrupts the global frequency structure, typically destroying embedded information \cite{petitcolas1999information}.
-    
-    \item \textbf{Limited Embedding Capacity:} Compared to spatial-domain LSB techniques or DCT-based approaches that operate on multiple independent blocks, DFT-based methods generally offer lower embedding capacity due to the constraint of modifying only perceptually insignificant frequency components \cite{Fridrich2012}.
-    
-    \item \textbf{Noise Sensitivity:} Additive noise affects frequency components unpredictably, particularly in high-frequency regions. Careful magnitude modification control is essential to prevent extraction errors under noisy conditions \cite{cox2007digital}.
-    
-    \item \textbf{JPEG Compression Vulnerability:} While more robust than pure spatial methods, DFT-based approaches remain susceptible to lossy compression schemes like JPEG, which operate in the DCT domain and may significantly alter DFT coefficients during the compression-decompression cycle \cite{petitcolas1999information}.
-    
-    \item \textbf{Detection Vulnerability:} Statistical analysis of frequency-domain histograms and coefficient distributions may reveal embedding artifacts, particularly when embedding capacity approaches theoretical limits \cite{Fridrich2012}.
-    
+	\item \textbf{Translation invariance:} Spatial shifts in the image do not affect the
+	magnitude spectrum, so the embedded signal survives minor positional changes without
+	any re-alignment \cite{bracewell2000fourier}.
+	\item \textbf{Rotation robustness:} Embedding in circularly symmetric spectral regions
+	provides robustness to image rotation, a property DCT and DWT methods do not possess
+	\cite{ruanaidh1998rotation, solachidis2001circularly}.
+	\item \textbf{No blocking artefacts:} Because the DFT processes the whole image at once,
+	it does not introduce the tile-boundary artefacts that can appear in DCT-based
+	methods at low embedding strengths.
+	\item \textbf{Global distribution:} Each frequency coefficient is influenced by every
+	pixel, so modifications are distributed across the entire image rather than confined
+	to local blocks, reducing the spatial footprint of the embedding.
+	\item \textbf{Compatibility with spread-spectrum techniques:} DFT coefficients can serve
+	directly as the carrier for pseudo-random spreading sequences, combining the
+	geometric invariance of the DFT with the noise robustness of spread-spectrum
+	embedding \cite{marvel1999spread}.
 \end{itemize}
 
-\paragraph{Mitigation Strategies}
-To address these limitations, researchers have proposed various enhancement techniques:
+\subsubsection{Limitations and Challenges}
+
+Despite its geometric robustness advantages, DFT-based steganography faces important
+limitations:
+
 \begin{itemize}
-    \item \textbf{Hybrid Approaches:} Combining DFT with other transforms (DWT, DCT) to leverage complementary strengths \cite{chen2006dwt}
-    \item \textbf{Error Correction Coding:} Incorporating Reed-Solomon or turbo codes to enhance extraction reliability under distortion \cite{marvel1999spread}
-    \item \textbf{Template-Based Synchronization:} Embedding geometric synchronization patterns to recover from limited cropping or scaling \cite{kutter1999digital}
-    \item \textbf{Adaptive Embedding:} Adjusting embedding strength based on local image characteristics and frequency content \cite{podilchuk2001image}
+	\item \textbf{Cropping vulnerability:} Cropping removes pixels and changes the image
+	dimensions, destroying the global periodicity assumption on which the DFT is based.
+	All frequency coefficients are affected, making DFT-based embeddings highly sensitive
+	to spatial cropping \cite{petitcolas1999information}.
+	\item \textbf{Sensitivity to JPEG compression:} JPEG operates in the DCT domain, and
+	JPEG recompression alters DFT coefficients in a complex, block-dependent manner.
+	DFT-based embeddings are therefore less JPEG-resistant than DCT mid-frequency
+	embeddings designed specifically to survive quantisation \cite{cox2007digital}.
+	\item \textbf{Conjugate symmetry constraint:} The DFT of a real image satisfies
+	$F(M-u, N-v) = F^*(u,v)$. Any modification must respect this constraint, which
+	effectively halves the number of independently usable embedding positions and
+	reduces the practical embedding capacity.
+	\item \textbf{Lower capacity than DCT:} Because only mid-frequency coefficients in a
+	single global spectrum are available, DFT methods generally support lower payload
+	rates than DCT methods, which exploit every block's coefficient set independently
+	\cite{Fridrich2012}.
+	\item \textbf{Computational cost:} Although the FFT reduces complexity to
+	$\mathcal{O}(MN\log MN)$, processing the full image spectrum is still more
+	expensive per bit embedded than block-based DCT processing for large images
+	\cite{cooley1965algorithm}.
 \end{itemize}
 
-These observations indicate that while DFT-based steganography offers unique advantages for specific applications, optimal performance in diverse operational scenarios typically requires integration with complementary techniques or strategic application to use cases that align with its strength profile \cite{ruanaidh1998rotation, cox2007digital}.
-
-\textit{Figure Suggestion:}  
-\textbf{Figure X.8:} Performance comparison charts showing: (a) imperceptibility metrics (PSNR, SSIM) versus embedding capacity for DFT-based methods compared to spatial and DCT approaches, (b) robustness evaluation against various attacks (JPEG compression, noise, filtering, geometric transformations), demonstrating the trade-offs inherent in DFT-based steganography.
+These limitations indicate that DFT-based steganography is best suited to applications
+where rotation and translation robustness are primary requirements, and where crop-resistance
+is either not needed or is provided by a complementary mechanism such as the fragmentation
+and distributed embedding strategy proposed in this thesis \cite{ruanaidh1998rotation,
+	cox2007digital}.e trade-offs inherent in DFT-based steganography.
 
 
 \section{Robustness-Oriented Approaches}
@@ -1048,7 +1183,7 @@ Correlation or bit detection rate) rather than on undetectability.
 
 Steganography, by contrast, requires \emph{covert communication}: the existence of the
 hidden message must remain undetectable to unauthorized observers, even sophisticated
-steganalysts \cite{provos2003hide}, johnson1998exploring}.
+steganalysts \cite{provos2003hide, johnson1998exploring}.
 This imposes a fundamentally different constraint on the embedding process.
 Techniques that enhance robustness—redundancy, high embedding strength, structured payload
 distribution—tend to introduce statistical artifacts that increase the risk of steganalytic
@@ -1510,63 +1645,122 @@ a single-pixel crop offset causes every $8 \times 8$ DCT block to be misaligned,
 a near-random BER. This effect is illustrated conceptually in
 Figure~\ref{fig:crop_misalignment}.
 
+
+Copy
+
 \begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[
-      scale=0.82,
-      block/.style={draw, minimum size=1.0cm, inner sep=0, font=\footnotesize},
-      emb/.style={draw, minimum size=1.0cm, inner sep=0, fill=blue!20, font=\footnotesize},
-      crop/.style={draw, minimum size=1.0cm, inner sep=0, fill=red!15, font=\footnotesize},
-      miss/.style={draw, minimum size=1.0cm, inner sep=0, fill=gray!12,
-                   font=\footnotesize, dashed},
-    ]
-
-    % ---- LEFT: original block grid ----
-    \node[font=\small\bfseries] at (2.0, 0.7) {Original image};
-
-    \foreach \col in {0,1,2,3} {
-      \foreach \row in {0,-1,-2,-3} {
-        \node[block] at (\col, \row) {};
-      }
-    }
-    % Highlight two embedded blocks
-    \node[emb] at (1,-1) {E};
-    \node[emb] at (2,-2) {E};
-
-    % Crop line (remove leftmost column)
-    \draw[very thick, red!70, dashed]
-      (0.5, 0.5) -- (0.5, -3.5)
-      node[below, font=\footnotesize, red!70]{crop line};
-
-    % ---- RIGHT: cropped image with shifted grid ----
-    \node[font=\small\bfseries] at (8.5, 0.7) {After crop (grid shifts)};
-
-    \foreach \col in {0,1,2} {
-      \foreach \row in {0,-1,-2,-3} {
-        \node[miss] at (6.0+\col, \row) {};
-      }
-    }
-    % Embedded blocks now at wrong positions
-    \node[crop] at (6.0, -1) {?};
-    \node[crop] at (7.0, -2) {?};
-
-    % Arrow
-    \draw[->, very thick, gray!60] (4.7, -1.5) -- (5.7, -1.5)
-      node[midway, above, font=\footnotesize]{crop + shift};
-
-    % Legend
-    \node[emb, right] at (0, -4.6) {};
-    \node[font=\footnotesize, right] at (0.6, -4.6) {embedded block};
-    \node[crop, right] at (3.2, -4.6) {};
-    \node[font=\footnotesize, right] at (3.8, -4.6) {misaligned block};
-
-  \end{tikzpicture}
-  \caption{Effect of cropping on block-based DCT embedding. Removing even a single column
-           of pixels shifts the entire block grid, causing the extractor to read coefficients
-           from misaligned blocks. The embedded data (marked E) is now read from the wrong
-           positions (marked ?), producing near-random extraction even though the data
-           itself was not removed by the crop.}
-  \label{fig:crop_misalignment}
+	\centering
+	\begin{tikzpicture}
+		
+		% ---- block size ----
+		\newcommand{\B}{1.1}
+		
+		% =========================================================
+		% LEFT: Original 4x4 grid
+		% =========================================================
+		\node[font=\small\bfseries] at (2.2, 0.55) {Original image};
+		
+		% Column 0 shaded (to be removed)
+		\foreach \r in {0,1,2,3}{
+			\fill[red!18] (0, {-\r*\B}) rectangle (\B, {-\r*\B - \B});
+			\draw[thick]  (0, {-\r*\B}) rectangle (\B, {-\r*\B - \B});
+		}
+		% Columns 1-3 plain
+		\foreach \c in {1,2,3}{
+			\foreach \r in {0,1,2,3}{
+				\draw[thick] ({\c*\B}, {-\r*\B}) rectangle ({(\c+1)*\B}, {-\r*\B - \B});
+			}
+		}
+		
+		% Embedded blocks (blue)
+		\fill[blue!28] (\B,      {-\B})   rectangle ({2*\B}, {-2*\B});
+		\fill[blue!28] ({2*\B},  {-2*\B}) rectangle ({3*\B}, {-3*\B});
+		\draw[thick]   (\B,      {-\B})   rectangle ({2*\B}, {-2*\B});
+		\draw[thick]   ({2*\B},  {-2*\B}) rectangle ({3*\B}, {-3*\B});
+		\node[font=\small\bfseries, blue!70!black] at ({1.5*\B}, {-1.5*\B}) {E};
+		\node[font=\small\bfseries, blue!70!black] at ({2.5*\B}, {-2.5*\B}) {E};
+		
+		% Crop boundary
+		\draw[very thick, red!70, dashed] (\B, 0.4) -- (\B, {-4*\B - 0.1});
+		\node[font=\footnotesize, red!70, below] at (\B, {-4*\B - 0.1}) {crop boundary};
+		\node[font=\footnotesize, red!60] at ({0.5*\B}, 0.38) {removed};
+		
+		% =========================================================
+		% ARROW
+		% =========================================================
+		\draw[-{Stealth[length=6pt]}, very thick, gray!55]
+		({4*\B + 0.3}, {-2*\B}) -- ({5.5*\B + 0.05}, {-2*\B});
+		\node[font=\footnotesize, gray!60, above=3pt] at ({4.7*\B}, {-2*\B})
+		{crop\ +\ grid\ shift};
+		
+		% =========================================================
+		% RIGHT: After-crop — extractor grid now misaligned
+		% =========================================================
+		\pgfmathsetmacro{\RX}{6.5}
+		
+		\node[font=\small\bfseries] at ({\RX + 2.2}, 0.55)
+		{After crop (extractor grid shifts)};
+		
+		% Ghost extractor grid (dashed, 4 cols)
+		\foreach \c in {0,1,2,3}{
+			\foreach \r in {0,1,2,3}{
+				\draw[thick, gray!45, dashed]
+				({\RX + \c*\B}, {-\r*\B}) rectangle
+				({\RX + (\c+1)*\B}, {-\r*\B - \B});
+			}
+		}
+		
+		% Actual surviving image data — 3 cols only, solid border
+		\foreach \c in {0,1,2}{
+			\foreach \r in {0,1,2,3}{
+				\draw[thick, gray!70]
+				({\RX + \c*\B}, {-\r*\B}) rectangle
+				({\RX + (\c+1)*\B}, {-\r*\B - \B});
+			}
+		}
+		
+		% Misaligned read positions (red) — shifted 1 col left vs original E
+		\fill[red!22]  ({\RX},         {-\B})   rectangle ({\RX + \B},   {-2*\B});
+		\fill[red!22]  ({\RX + \B},    {-2*\B}) rectangle ({\RX + 2*\B}, {-3*\B});
+		\draw[thick]   ({\RX},         {-\B})   rectangle ({\RX + \B},   {-2*\B});
+		\draw[thick]   ({\RX + \B},    {-2*\B}) rectangle ({\RX + 2*\B}, {-3*\B});
+		\node[font=\small\bfseries, red!70!black] at ({\RX + 0.5*\B}, {-1.5*\B}) {?};
+		\node[font=\small\bfseries, red!70!black] at ({\RX + 1.5*\B}, {-2.5*\B}) {?};
+		
+		% 1-block shift indicator
+		\draw[{Stealth[length=4pt]}-{Stealth[length=4pt]}, orange!80!black, thick]
+		(\RX, {-4*\B - 0.55}) -- ({\RX + \B}, {-4*\B - 0.55});
+		\node[font=\footnotesize, orange!75!black, below]
+		at ({\RX + 0.5*\B}, {-4*\B - 0.55}) {1-block shift};
+		
+		% =========================================================
+		% LEGEND
+		% =========================================================
+		\pgfmathsetmacro{\LY}{-6.2}
+		
+		\fill[blue!28] (0.2, \LY)  rectangle (1.0, {\LY + 0.5});
+		\draw[thick]   (0.2, \LY)  rectangle (1.0, {\LY + 0.5});
+		\node[font=\footnotesize, anchor=west] at (1.1, {\LY + 0.25})
+		{Embedded block (original)};
+		
+		\fill[red!22]  (5.5, \LY)  rectangle (6.3, {\LY + 0.5});
+		\draw[thick]   (5.5, \LY)  rectangle (6.3, {\LY + 0.5});
+		\node[font=\footnotesize, anchor=west] at (6.4, {\LY + 0.25})
+		{Misaligned read position};
+		
+		\draw[thick, gray!45, dashed] (11.0, \LY) rectangle (11.8, {\LY + 0.5});
+		\node[font=\footnotesize, anchor=west] at (11.9, {\LY + 0.25})
+		{Extractor grid};
+		
+	\end{tikzpicture}
+	\caption{Effect of cropping on block-based DCT embedding. Column~0 (shaded red, left)
+		is removed by the crop. Because the extractor anchors its $8\times8$ block
+		grid to the top-left corner of the received image, the entire grid shifts by
+		one block position. The extractor reads coefficients from the wrong blocks
+		(marked~?), even though the embedded blocks~E were not themselves removed.
+		This synchronisation failure produces a near-random BER regardless of
+		the signal-level embedding quality.}
+	\label{fig:crop_misalignment}
 \end{figure}
 
 \subsubsection{Resizing and Resampling}
@@ -1955,9 +2149,13 @@ Recent deep learning-based steganographic approaches attempt to address some of 
 
 Collectively, these observations reveal a critical research gap in existing work. Current steganographic systems predominantly focus on protecting embedding locations and coefficients rather than ensuring the survivability of the hidden payload itself. Robustness is often evaluated in terms of local signal preservation, while the ability to recover meaningful information under partial data loss and desynchronization remains largely unexplored.
 
-Figure 2.X: Comparison between embedding-centric robustness and payload-oriented survivability
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.85\textwidth]{Comparison.png}
+	\caption{Comparison between embedding-centric robustness and payload-oriented survivability.}
+	\label{fig: Comparison between embedding-centric robustness and payload-oriented survivability}
+\end{figure}
 
-Figure 2.Y: Impact of signal processing and geometric attacks on synchronization and data recovery
 
 This thesis addresses this gap by shifting the design focus from embedding-centric robustness to payload-oriented survivability. Instead of assuming perfect synchronization or complete data preservation, the proposed framework emphasizes structured message fragmentation, controlled redundancy, and multi-domain distribution to enable partial recovery under severe and compound image degradation. By tolerating data loss and synchronization imperfections, the framework aims to achieve reliable covert communication in hostile and uncontrolled digital environments.
 

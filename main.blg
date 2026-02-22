@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "fridrich2004attacks"
+Warning--empty journal in wengrowski2019light
+Warning--empty booktitle in morkel2005overview
+Warning--there's a number but no series in morkel2005overview
+Warning--can't use both volume and number fields in solachidis2001circularly
+Warning--empty journal in westfeld2001f5
+Warning--empty booktitle in boroumand2019deep
+Warning--can't use both volume and number fields in boroumand2019deep
+Warning--empty booktitle in xu2016structural
+Warning--can't use both volume and number fields in xu2016structural
+Warning--empty publisher in dinh2017density
+You've used 55 entries,
+            1791 wiz_defined-function locations,
+            740 strings with 12037 characters,
+and the built_in function-call counts, 15066 in all, are:
+= -- 1399
+> -- 552
+< -- 31
++ -- 206
+- -- 151
+* -- 935
+:= -- 2140
+add.period$ -- 169
+call.type$ -- 55
+change.case$ -- 52
+chr.to.int$ -- 0
+cite$ -- 65
+duplicate$ -- 759
+empty$ -- 1521
+format.name$ -- 151
+if$ -- 3516
+int.to.chr$ -- 0
+int.to.str$ -- 55
+missing$ -- 62
+newline$ -- 279
+num.names$ -- 55
+pop$ -- 225
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 447
+stack$ -- 0
+substring$ -- 1114
+swap$ -- 276
+text.length$ -- 31
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 10
+while$ -- 145
+width$ -- 57
+write$ -- 607
+(There were 11 warnings)
