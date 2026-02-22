@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  22 FEB 2026 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  22 FEB 2026 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -781,6 +781,49 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@dima=\skip60
 \bigstrutjot=\dimen309
 )
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count331
@@ -793,24 +836,24 @@ LaTeX Warning: Label `fig:dft_process' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -861,14 +904,22 @@ LaTeX Font Info:    ... okay on input line 26.
 \everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 28.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -881,14 +932,44 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 <university logo.jpg, id=388, 860.21375pt x 860.21375pt>
 File: university logo.jpg Graphic file (type jpg)
 <use university logo.jpg>
-Package pdftex.def Info: university logo.jpg  used on input line 34.
+Package pdftex.def Info: university logo.jpg  used on input line 36.
 (pdftex.def)             Requested size: 85.35826pt x 85.357pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+7.
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
+7.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+37.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+37.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 37.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 37.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -896,21 +977,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 File: university logo.jpg Graphic file (type jpg)
 <use university logo.jpg>
-Package pdftex.def Info: university logo.jpg  used on input line 45.
+Package pdftex.def Info: university logo.jpg  used on input line 47.
 (pdftex.def)             Requested size: 85.35826pt x 85.357pt.
 
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./university logo.jpg>]
-(./main.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
+dvips/lm/lm-ec.enc} <./university logo.jpg>] (./main.toc
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 ...assical Framework}{47}{subsection.2.6.11}
+l.125 ...assical Framework}{46}{subsection.2.6.11}
                                                   % [1
 
 ]
@@ -925,7 +1006,8 @@ l.125 ...assical Framework}{47}{subsection.2.6.11}
 
 [4
 
-])
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
@@ -941,20 +1023,24 @@ l.125 ...assical Framework}{47}{subsection.2.6.11}
 
 ]
 Chapter 1.
-
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+20.
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 [7
 
-]
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 [8]
 
 [9]
 Chapter 2.
-<triangle.png, id=665, 2071.74pt x 977.90344pt>
+<triangle.png, id=660, 2071.74pt x 977.90344pt>
 File: triangle.png Graphic file (type png)
 <use triangle.png>
-Package pdftex.def Info: triangle.png  used on input line 201.
+Package pdftex.def Info: triangle.png  used on input line 203.
 (pdftex.def)             Requested size: 460.93153pt x 217.55672pt.
 
 
@@ -963,86 +1049,96 @@ Package pdftex.def Info: triangle.png  used on input line 201.
 ]
 
 [11 <./triangle.png (PNG copy)>]
-<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=683, 204.765pt x 116
+<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=678, 204.765pt x 116
 .8365pt>
 File: Frequency-regions-of-88-block-2D-DCT-coefficients.png Graphic file (type 
 png)
 <use Frequency-regions-of-88-block-2D-DCT-coefficients.png>
 Package pdftex.def Info: Frequency-regions-of-88-block-2D-DCT-coefficients.png 
- used on input line 242.
+ used on input line 244.
 (pdftex.def)             Requested size: 307.2929pt x 175.3488pt.
 
 
 [12 <./Frequency-regions-of-88-block-2D-DCT-coefficients.png>]
-<DCT 8 blocks devision.png, id=691, 522.45187pt x 454.69875pt>
+<DCT 8 blocks devision.png, id=686, 522.45187pt x 454.69875pt>
 File: DCT 8 blocks devision.png Graphic file (type png)
 <use DCT 8 blocks devision.png>
-Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 306.
+Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 308.
 (pdftex.def)             Requested size: 307.2929pt x 267.44429pt.
 
 
-[13 <./DCT 8 blocks devision.png>]
-<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=705, 214.8025pt x 218.
+[13{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./DCT 8 blocks devision
+.png>]
+<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=700, 214.8025pt x 218.
 8175pt>
 File: DC-and-AC-coefficient-on-DCT-Transformation (1).png Graphic file (type pn
 g)
 <use DC-and-AC-coefficient-on-DCT-Transformation (1).png>
 Package pdftex.def Info: DC-and-AC-coefficient-on-DCT-Transformation (1).png  u
-sed on input line 351.
+sed on input line 353.
 (pdftex.def)             Requested size: 204.85672pt x 208.69012pt.
 
 
 [14 <./DC-and-AC-coefficient-on-DCT-Transformation (1).png>]
-<dct embeding process.png, id=714, 770.88pt x 437.38406pt>
+<dct embeding process.png, id=709, 770.88pt x 437.38406pt>
 File: dct embeding process.png Graphic file (type png)
 <use dct embeding process.png>
-Package pdftex.def Info: dct embeding process.png  used on input line 370.
+Package pdftex.def Info: dct embeding process.png  used on input line 372.
 (pdftex.def)             Requested size: 409.72125pt x 232.46648pt.
 
 
 [15 <./dct embeding process.png (PNG copy)>]
-<dwt decomposition.png, id=729, 1413.28pt x 770.88pt>
+<dwt decomposition.png, id=724, 1413.28pt x 770.88pt>
 File: dwt decomposition.png Graphic file (type png)
 <use dwt decomposition.png>
-Package pdftex.def Info: dwt decomposition.png  used on input line 426.
+Package pdftex.def Info: dwt decomposition.png  used on input line 428.
 (pdftex.def)             Requested size: 460.93153pt x 251.41524pt.
 
 
 [16]
-<Dwt process.png, id=738, 2071.74pt x 916.1728pt>
+<Dwt process.png, id=733, 2071.74pt x 916.1728pt>
 File: Dwt process.png Graphic file (type png)
 <use Dwt process.png>
-Package pdftex.def Info: Dwt process.png  used on input line 457.
+Package pdftex.def Info: Dwt process.png  used on input line 459.
 (pdftex.def)             Requested size: 460.93153pt x 203.82333pt.
 
 
 [17 <./dwt decomposition.png (PNG copy)> <./Dwt process.png (PNG copy)>]
 
 [18]
-<figure_2Z_dft.png, id=762, 640.2465pt x 618.894pt>
+<figure_2Z_dft.png, id=757, 640.2465pt x 618.894pt>
 File: figure_2Z_dft.png Graphic file (type png)
 <use figure_2Z_dft.png>
-Package pdftex.def Info: figure_2Z_dft.png  used on input line 541.
+Package pdftex.def Info: figure_2Z_dft.png  used on input line 543.
 (pdftex.def)             Requested size: 307.2929pt x 297.05629pt.
 
 
 [19 <./figure_2Z_dft.png>]
-<dft_magnitude_spectrum.png, id=776, 759.91905pt x 367.8543pt>
+<dft_magnitude_spectrum.png, id=771, 759.91905pt x 367.8543pt>
 File: dft_magnitude_spectrum.png Graphic file (type png)
 <use dft_magnitude_spectrum.png>
-Package pdftex.def Info: dft_magnitude_spectrum.png  used on input line 583.
+Package pdftex.def Info: dft_magnitude_spectrum.png  used on input line 585.
 (pdftex.def)             Requested size: 435.3303pt x 210.72874pt.
 
 
 [20 <./dft_magnitude_spectrum.png>]
 
 [21]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 758.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 758.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 758.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 772.
+
 
 [22]
 
 [23]
-Overfull \hbox (2.64622pt too wide) in paragraph at lines 941--944
-[]\T1/cmr/bx/n/12 Rotation \T1/cmr/m/n/12 in-tro-duces a global an-gu-lar off-s
+Overfull \hbox (2.80011pt too wide) in paragraph at lines 943--946
+[]\T1/lmr/bx/n/12 Rotation \T1/lmr/m/n/12 in-tro-duces a global an-gu-lar off-s
 et. Un-less the em-bed-ding do-main is rotation-invariant,
  []
 
@@ -1053,8 +1149,8 @@ et. Un-less the em-bed-ding do-main is rotation-invariant,
 [25]
 
 [26]
-Overfull \hbox (3.25357pt too wide) in paragraph at lines 1156--1164
-\T1/cmr/m/n/12 Embedding frag-ments across dif-fer-ent trans-form do-mains pro-
+Overfull \hbox (3.38113pt too wide) in paragraph at lines 1158--1166
+\T1/lmr/m/n/12 Embedding frag-ments across dif-fer-ent trans-form do-mains pro-
 vides com-ple-men-tary ro-bust-ness: spatial-
  []
 
@@ -1063,7 +1159,7 @@ vides com-ple-men-tary ro-bust-ness: spatial-
 [27]
 
 [28]
-Overfull \hbox (25.68639pt too wide) in paragraph at lines 1279--1295
+Overfull \hbox (25.6532pt too wide) in paragraph at lines 1281--1297
  [][] 
  []
 
@@ -1081,286 +1177,295 @@ Overfull \hbox (25.68639pt too wide) in paragraph at lines 1279--1295
 
 [34]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1827.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1829.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1827.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1829.
 
-Missing character: There is no ° in font cmr12!
 
 
 [35]
 
 LaTeX Warning: Citation `fridrich2004attacks' on page 36 undefined on input lin
-e 1986.
+e 1988.
 
 
 
 [36]
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 2063--2063
-[]|\T1/cmr/bx/n/10.95 Degradation
+Underfull \hbox (badness 10000) in paragraph at lines 2065--2065
+[]|\T1/lmr/bx/n/10.95 Degradation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2063--2063
-[]|\T1/cmr/bx/n/10.95 Failure
+Underfull \hbox (badness 10000) in paragraph at lines 2065--2065
+[]|\T1/lmr/bx/n/10.95 Failure
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 2066--2067
-[]|\T1/cmr/m/n/10.95 JPEG com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2067--2068
-[]|\T1/cmr/m/n/10.95 Coefficient
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2067--2068
-\T1/cmr/m/n/10.95 quan-ti-sa-tion
+Overfull \hbox (0.7496pt too wide) in paragraph at lines 2066--2066
+[]|\T1/lmr/bx/n/10.95 Survivable
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2069--2070
-[]|\T1/cmr/m/n/10.95 ECC,
+[]|\T1/lmr/m/n/10.95 Coefficient
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2069--2070
-\T1/cmr/m/n/10.95 mid-freq.
+\T1/lmr/m/n/10.95 quan-ti-sa-tion
  []
 
 
-Underfull \hbox (badness 5622) in paragraph at lines 2070--2071
-\T1/cmr/m/n/10.95 freq.; strength $\OML/cmm/m/it/10.95 >
+Underfull \hbox (badness 10000) in paragraph at lines 2071--2072
+[]|\T1/lmr/m/n/10.95 ECC,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2074--2075
-[]|\T1/cmr/m/n/10.95 Random bit
+Underfull \hbox (badness 10000) in paragraph at lines 2071--2072
+\T1/lmr/m/n/10.95 mid-freq.
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 2072--2073
+\T1/lmr/m/n/10.95 freq.; strength $\OML/lmm/m/it/10.95 >
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2075--2076
-[]|\T1/cmr/m/n/10.95 ECC, SS
+[]|\T1/lmr/m/n/10.95 Additive
  []
 
 
-Underfull \hbox (badness 6157) in paragraph at lines 2076--2077
-[]|\T1/cmr/m/n/10.95 ECC at frag-ment
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2076
+\T1/lmr/m/n/10.95 Gaus-sian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2079--2080
-[]|\T1/cmr/m/n/10.95 Convolution
+Underfull \hbox (badness 10000) in paragraph at lines 2076--2077
+[]|\T1/lmr/m/n/10.95 Random bit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2079--2080
-\T1/cmr/m/n/10.95 at-ten-u-a-tion
+Underfull \hbox (badness 10000) in paragraph at lines 2077--2078
+[]|\T1/lmr/m/n/10.95 ECC, SS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2080--2081
-[]|\T1/cmr/m/n/10.95 Erasure of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2080--2081
-\T1/cmr/m/n/10.95 high-freq.
+Underfull \hbox (badness 5431) in paragraph at lines 2078--2079
+[]|\T1/lmr/m/n/10.95 ECC at frag-ment
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
-[]|\T1/cmr/m/n/10.95 Mid-freq.
+[]|\T1/lmr/m/n/10.95 Convolution
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
+\T1/lmr/m/n/10.95 at-ten-u-a-tion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
-[]|\T1/cmr/m/n/10.95 Avoid high-
+[]|\T1/lmr/m/n/10.95 Erasure of
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 2085--2086
-\T1/cmr/m/n/10.95 (Eq. []2.27[]) +
+Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
+\T1/lmr/m/n/10.95 high-freq.
  []
 
 
-Overfull \hbox (4.33627pt too wide) in paragraph at lines 2087--2088
-[]|\T1/cmr/m/n/10.95 Redundancy,
+Underfull \hbox (badness 10000) in paragraph at lines 2083--2084
+[]|\T1/lmr/m/n/10.95 Mid-freq.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2087--2088
-\T1/cmr/m/n/10.95 frag-men-ta-
+Underfull \hbox (badness 10000) in paragraph at lines 2084--2085
+[]|\T1/lmr/m/n/10.95 Avoid high-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2088--2089
-[]|\T1/cmr/m/n/10.95 Distributed frag-
+Underfull \hbox (badness 2772) in paragraph at lines 2087--2088
+\T1/lmr/m/n/10.95 (Eq. []2.27[]) +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2088--2089
-\T1/cmr/m/n/10.95 ments max-imise
+Overfull \hbox (4.68802pt too wide) in paragraph at lines 2089--2090
+[]|\T1/lmr/m/n/10.95 Redundancy,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2091--2092
-[]|\T1/cmr/m/n/10.95 Interpolation
+Underfull \hbox (badness 10000) in paragraph at lines 2089--2090
+\T1/lmr/m/n/10.95 frag-men-ta-
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 2091--2092
-\T1/cmr/m/n/10.95 (Eq. []2.30[]) +
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2091
+[]|\T1/lmr/m/n/10.95 Distributed frag-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2092--2093
-[]|\T1/cmr/m/n/10.95 Block mis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2092--2093
-\T1/cmr/m/n/10.95 align-ment +
+Underfull \hbox (badness 10000) in paragraph at lines 2090--2091
+\T1/lmr/m/n/10.95 ments max-imise
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2093--2094
-[]|\T1/cmr/m/n/10.95 Invariant
+[]|\T1/lmr/m/n/10.95 Interpolation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2093--2094
-\T1/cmr/m/n/10.95 do-mains,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
-[]|\T1/cmr/m/n/10.95 Multi-scale re-dun-
+Underfull \hbox (badness 2772) in paragraph at lines 2093--2094
+\T1/lmr/m/n/10.95 (Eq. []2.30[]) +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
-\T1/cmr/m/n/10.95 dant em-bed-ding
+[]|\T1/lmr/m/n/10.95 Block mis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2097--2098
-[]|\T1/cmr/m/n/10.95 Coordinate
+Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
+\T1/lmr/m/n/10.95 align-ment +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2097--2098
-\T1/cmr/m/n/10.95 trans-form
+Underfull \hbox (badness 10000) in paragraph at lines 2095--2096
+[]|\T1/lmr/m/n/10.95 Invariant
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 2097--2098
-\T1/cmr/m/n/10.95 (Eq. []2.31[]) +
+Underfull \hbox (badness 10000) in paragraph at lines 2095--2096
+\T1/lmr/m/n/10.95 do-mains,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2098--2099
-[]|\T1/cmr/m/n/10.95 Global syn-
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
+[]|\T1/lmr/m/n/10.95 Multi-scale re-dun-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2098--2099
-\T1/cmr/m/n/10.95 chro-ni-sa-tion
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
+\T1/lmr/m/n/10.95 dant em-bed-ding
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2099--2100
-[]|\T1/cmr/m/n/10.95 Log-polar
+[]|\T1/lmr/m/n/10.95 Coordinate
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 2099--2100
-\T1/cmr/m/n/10.95 DFT, tem-
+Underfull \hbox (badness 10000) in paragraph at lines 2099--2100
+\T1/lmr/m/n/10.95 trans-form
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 2099--2100
+\T1/lmr/m/n/10.95 (Eq. []2.31[]) +
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2100--2101
-[]|\T1/cmr/m/n/10.95 DFT mag-ni-tude
+[]|\T1/lmr/m/n/10.95 Global syn-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2100--2101
+\T1/lmr/m/n/10.95 chro-ni-sa-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2101--2102
+[]|\T1/lmr/m/n/10.95 Log-polar
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 2101--2102
+\T1/lmr/m/n/10.95 DFT, tem-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2102--2103
-[]|\T1/cmr/m/n/10.95 Compound
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2103--2104
-[]|\T1/cmr/m/n/10.95 Sequential
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2103--2104
-\T1/cmr/m/n/10.95 com-po-si-tion
+[]|\T1/lmr/m/n/10.95 DFT mag-ni-tude
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2104--2105
-[]|\T1/cmr/m/n/10.95 Cascaded
+[]|\T1/lmr/m/n/10.95 Compound
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2105--2106
-[]|\T1/cmr/m/n/10.95 Structured
+[]|\T1/lmr/m/n/10.95 Sequential
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 2105--2106
-\T1/cmr/m/n/10.95 re-dun-dancy
+\T1/lmr/m/n/10.95 com-po-si-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2112
-[]|\T1/cmr/m/n/10.95 Low dis-
+Underfull \hbox (badness 10000) in paragraph at lines 2106--2107
+[]|\T1/lmr/m/n/10.95 Cascaded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2112
-\T1/cmr/m/n/10.95 tor-tion,
+Underfull \hbox (badness 10000) in paragraph at lines 2107--2108
+[]|\T1/lmr/m/n/10.95 Structured
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2112
-\T1/cmr/m/n/10.95 struc-tural
+Underfull \hbox (badness 10000) in paragraph at lines 2107--2108
+\T1/lmr/m/n/10.95 re-dun-dancy
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 2112--2113
-[]|\T1/cmr/m/n/10.95 Low per-coefficient
+Underfull \hbox (badness 10000) in paragraph at lines 2113--2114
+[]|\T1/lmr/m/n/10.95 Low dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2113--2114
+\T1/lmr/m/n/10.95 tor-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2113--2114
+\T1/lmr/m/n/10.95 struc-tural
+ []
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 2114--2115
+[]|\T1/lmr/m/n/10.95 Low per-coefficient
  []
 
 
 
 [38]
-Overfull \hbox (0.93909pt too wide) in paragraph at lines 2136--2137
-\T1/cmr/m/n/12 The lit-er-a-ture re-viewed in this chap-ter demon-strates sig-n
+Overfull \hbox (1.06279pt too wide) in paragraph at lines 2138--2139
+\T1/lmr/m/n/12 The lit-er-a-ture re-viewed in this chap-ter demon-strates sig-n
 if-i-cant progress in the field of im-age steganog-
  []
 
 
 
 [39]
-<Comparison.png, id=1075, 2826.56pt x 1541.76pt>
+<Comparison.png, id=1069, 2826.56pt x 1541.76pt>
 File: Comparison.png Graphic file (type png)
 <use Comparison.png>
-Package pdftex.def Info: Comparison.png  used on input line 2154.
+Package pdftex.def Info: Comparison.png  used on input line 2156.
 (pdftex.def)             Requested size: 435.3303pt x 237.44118pt.
 
 
 [40 <./Comparison.png>]
 
 [41]
-Overfull \hbox (8.06924pt too wide) in paragraph at lines 2363--2372
-[] []\T1/cmr/bx/n/12 Key con-tri-bu-tions.[] \T1/cmr/m/n/12 The pri-mary in-no-
+Overfull \hbox (8.19243pt too wide) in paragraph at lines 2365--2374
+[] []\T1/lmr/bx/n/12 Key con-tri-bu-tions.[] \T1/lmr/m/n/12 The pri-mary in-no-
 va-tion in SteganoGAN is a rig-or-ous treat-ment of the capacity--
  []
 
@@ -1368,19 +1473,17 @@ va-tion in SteganoGAN is a rig-or-ous treat-ment of the capacity--
 
 [42]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2401.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2403.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2401.
-
-Missing character: There is no ° in font cmr12!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2416.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2403.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2416.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2418.
 
-Missing character: There is no ° in font cmr12!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2418.
+
 
 
 [43]
@@ -1412,6 +1515,12 @@ Chapter 3.
 [54]
 
 [55]
+Overfull \hbox (6.92679pt too wide) in paragraph at lines 3226--3226
+|[]\T1/lmr/bx/n/17.28 Computational Com-plex-ity and Prac-ti-cal Con-sid-er-a-t
+ions| 
+ []
+
+
 
 [56]
 
@@ -1434,6 +1543,11 @@ Chapter 6.
 [60
 
 ]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+0.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 [61
 
@@ -1459,49 +1573,31 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 73AAD644A5B8004D030E37465154DF74;21743.
  ) 
 Here is how much of TeX's memory you used:
- 33996 strings out of 475178
- 787262 string characters out of 5766539
- 1291953 words of memory out of 5000000
- 56132 multiletter control sequences out of 15000+600000
- 584804 words of font info for 97 fonts, out of 8000000 for 9000
+ 34253 strings out of 475178
+ 792974 string characters out of 5766539
+ 1292195 words of memory out of 5000000
+ 56351 multiletter control sequences out of 15000+600000
+ 671980 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,19n,91p,903b,2320s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600
-pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.60
-0pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.6
-00pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.
-600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000
-.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx109
-5.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm10
-95.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1
-200.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm
-0800.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
-x2488.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-bx1440.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-crm1200.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/
-ecbx1200.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecbx2074.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecrm1440.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecrm1728.600pk> </home/akram/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecbx1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.p
-fb>
-Output written on main.pdf (65 pages, 21005728 bytes).
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
+7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb>
+Output written on main.pdf (65 pages, 20975955 bytes).
 PDF statistics:
- 2136 PDF objects out of 2487 (max. 8388607)
- 1322 compressed objects within 14 object streams
+ 1436 PDF objects out of 1440 (max. 8388607)
+ 1287 compressed objects within 13 object streams
  317 named destinations out of 1000 (max. 500000)
  828 words of extra memory for PDF output out of 10000 (max. 10000000)
 
