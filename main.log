@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  22 FEB 2026 17:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  26 FEB 2026 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -829,11 +829,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count331
 \l__pdf_internal_box=\box71
 )
-(./main.aux
-
-LaTeX Warning: Label `fig:dft_process' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
@@ -991,7 +987,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 ...assical Framework}{46}{subsection.2.6.11}
+l.125 ...assical Framework}{47}{subsection.2.7.11}
                                                   % [1
 
 ]
@@ -1037,10 +1033,10 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 [9]
 Chapter 2.
-<triangle.png, id=660, 2071.74pt x 977.90344pt>
+<triangle.png, id=659, 2071.74pt x 977.90344pt>
 File: triangle.png Graphic file (type png)
 <use triangle.png>
-Package pdftex.def Info: triangle.png  used on input line 203.
+Package pdftex.def Info: triangle.png  used on input line 202.
 (pdftex.def)             Requested size: 460.93153pt x 217.55672pt.
 
 
@@ -1049,123 +1045,126 @@ Package pdftex.def Info: triangle.png  used on input line 203.
 ]
 
 [11 <./triangle.png (PNG copy)>]
-<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=678, 204.765pt x 116
+<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=677, 204.765pt x 116
 .8365pt>
 File: Frequency-regions-of-88-block-2D-DCT-coefficients.png Graphic file (type 
 png)
 <use Frequency-regions-of-88-block-2D-DCT-coefficients.png>
 Package pdftex.def Info: Frequency-regions-of-88-block-2D-DCT-coefficients.png 
- used on input line 244.
+ used on input line 245.
 (pdftex.def)             Requested size: 307.2929pt x 175.3488pt.
 
 
 [12 <./Frequency-regions-of-88-block-2D-DCT-coefficients.png>]
-<DCT 8 blocks devision.png, id=686, 522.45187pt x 454.69875pt>
+<DCT 8 blocks devision.png, id=685, 522.45187pt x 454.69875pt>
 File: DCT 8 blocks devision.png Graphic file (type png)
 <use DCT 8 blocks devision.png>
-Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 308.
+Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 309.
 (pdftex.def)             Requested size: 307.2929pt x 267.44429pt.
 
 
-[13{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} <./DCT 8 blocks devision
-.png>]
-<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=700, 214.8025pt x 218.
+[13{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
+<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=698, 214.8025pt x 218.
 8175pt>
 File: DC-and-AC-coefficient-on-DCT-Transformation (1).png Graphic file (type pn
 g)
 <use DC-and-AC-coefficient-on-DCT-Transformation (1).png>
 Package pdftex.def Info: DC-and-AC-coefficient-on-DCT-Transformation (1).png  u
-sed on input line 353.
+sed on input line 354.
 (pdftex.def)             Requested size: 204.85672pt x 208.69012pt.
 
 
-[14 <./DC-and-AC-coefficient-on-DCT-Transformation (1).png>]
+[14 <./DCT 8 blocks devision.png>]
 <dct embeding process.png, id=709, 770.88pt x 437.38406pt>
 File: dct embeding process.png Graphic file (type png)
 <use dct embeding process.png>
-Package pdftex.def Info: dct embeding process.png  used on input line 372.
+Package pdftex.def Info: dct embeding process.png  used on input line 373.
 (pdftex.def)             Requested size: 409.72125pt x 232.46648pt.
 
 
-[15 <./dct embeding process.png (PNG copy)>]
-<dwt decomposition.png, id=724, 1413.28pt x 770.88pt>
+[15 <./DC-and-AC-coefficient-on-DCT-Transformation (1).png> <./dct embeding pro
+cess.png (PNG copy)>]
+
+[16]
+<The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wavelet
+.png, id=730, 831.105pt x 334.24875pt>
+File: The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wa
+velet.png Graphic file (type png)
+<use The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wav
+elet.png>
+Package pdftex.def Info: The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-a
+nd-HH-by-1-level-wavelet.png  used on input line 443.
+(pdftex.def)             Requested size: 358.50317pt x 144.17807pt.
+<dwt decomposition.png, id=731, 1413.28pt x 770.88pt>
 File: dwt decomposition.png Graphic file (type png)
 <use dwt decomposition.png>
-Package pdftex.def Info: dwt decomposition.png  used on input line 428.
+Package pdftex.def Info: dwt decomposition.png  used on input line 452.
 (pdftex.def)             Requested size: 460.93153pt x 251.41524pt.
 
 
-[16]
-<Dwt process.png, id=733, 2071.74pt x 916.1728pt>
-File: Dwt process.png Graphic file (type png)
-<use Dwt process.png>
-Package pdftex.def Info: Dwt process.png  used on input line 459.
-(pdftex.def)             Requested size: 460.93153pt x 203.82333pt.
+[17 <./The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-w
+avelet.png>]
 
+[18 <./dwt decomposition.png (PNG copy)>]
 
-[17 <./dwt decomposition.png (PNG copy)> <./Dwt process.png (PNG copy)>]
-
-[18]
-<figure_2Z_dft.png, id=757, 640.2465pt x 618.894pt>
+[19]
+<figure_2Z_dft.png, id=772, 640.2465pt x 618.894pt>
 File: figure_2Z_dft.png Graphic file (type png)
 <use figure_2Z_dft.png>
-Package pdftex.def Info: figure_2Z_dft.png  used on input line 543.
+Package pdftex.def Info: figure_2Z_dft.png  used on input line 571.
 (pdftex.def)             Requested size: 307.2929pt x 297.05629pt.
-
-
-[19 <./figure_2Z_dft.png>]
-<dft_magnitude_spectrum.png, id=771, 759.91905pt x 367.8543pt>
+<dft_magnitude_spectrum.png, id=775, 759.91905pt x 367.8543pt>
 File: dft_magnitude_spectrum.png Graphic file (type png)
 <use dft_magnitude_spectrum.png>
-Package pdftex.def Info: dft_magnitude_spectrum.png  used on input line 585.
+Package pdftex.def Info: dft_magnitude_spectrum.png  used on input line 613.
 (pdftex.def)             Requested size: 435.3303pt x 210.72874pt.
 
 
-[20 <./dft_magnitude_spectrum.png>]
+[20 <./figure_2Z_dft.png>]
 
-[21]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 758.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 758.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 758.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 772.
-
+[21 <./dft_magnitude_spectrum.png>]
 
 [22]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 786.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 786.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 786.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 800.
+
 
 [23]
-Overfull \hbox (2.80011pt too wide) in paragraph at lines 943--946
+
+[24]
+Overfull \hbox (2.80011pt too wide) in paragraph at lines 971--974
 []\T1/lmr/bx/n/12 Rotation \T1/lmr/m/n/12 in-tro-duces a global an-gu-lar off-s
 et. Un-less the em-bed-ding do-main is rotation-invariant,
  []
 
 
 
-[24]
-
 [25]
 
 [26]
-Overfull \hbox (3.38113pt too wide) in paragraph at lines 1158--1166
+
+[27]
+Overfull \hbox (3.38113pt too wide) in paragraph at lines 1186--1194
 \T1/lmr/m/n/12 Embedding frag-ments across dif-fer-ent trans-form do-mains pro-
 vides com-ple-men-tary ro-bust-ness: spatial-
  []
 
 
 
-[27]
-
 [28]
-Overfull \hbox (25.6532pt too wide) in paragraph at lines 1281--1297
+
+[29]
+Overfull \hbox (25.6532pt too wide) in paragraph at lines 1309--1325
  [][] 
  []
 
 
-
-[29]
 
 [30]
 
@@ -1177,316 +1176,316 @@ Overfull \hbox (25.6532pt too wide) in paragraph at lines 1281--1297
 
 [34]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1829.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1829.
-
-
-
 [35]
 
-LaTeX Warning: Citation `fridrich2004attacks' on page 36 undefined on input lin
-e 1988.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1857.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1857.
 
 
 
 [36]
 
+LaTeX Warning: Citation `fridrich2004attacks' on page 37 undefined on input lin
+e 2016.
+
+
+
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 2065--2065
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 2093--2093
 []|\T1/lmr/bx/n/10.95 Degradation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2065--2065
+Underfull \hbox (badness 10000) in paragraph at lines 2093--2093
 []|\T1/lmr/bx/n/10.95 Failure
  []
 
 
-Overfull \hbox (0.7496pt too wide) in paragraph at lines 2066--2066
+Overfull \hbox (0.7496pt too wide) in paragraph at lines 2094--2094
 []|\T1/lmr/bx/n/10.95 Survivable
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2069--2070
+Underfull \hbox (badness 10000) in paragraph at lines 2097--2098
 []|\T1/lmr/m/n/10.95 Coefficient
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2069--2070
+Underfull \hbox (badness 10000) in paragraph at lines 2097--2098
 \T1/lmr/m/n/10.95 quan-ti-sa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2071--2072
+Underfull \hbox (badness 10000) in paragraph at lines 2099--2100
 []|\T1/lmr/m/n/10.95 ECC,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2071--2072
+Underfull \hbox (badness 10000) in paragraph at lines 2099--2100
 \T1/lmr/m/n/10.95 mid-freq.
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 2072--2073
+Underfull \hbox (badness 5091) in paragraph at lines 2100--2101
 \T1/lmr/m/n/10.95 freq.; strength $\OML/lmm/m/it/10.95 >
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2075--2076
+Underfull \hbox (badness 10000) in paragraph at lines 2103--2104
 []|\T1/lmr/m/n/10.95 Additive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2075--2076
+Underfull \hbox (badness 10000) in paragraph at lines 2103--2104
 \T1/lmr/m/n/10.95 Gaus-sian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2076--2077
+Underfull \hbox (badness 10000) in paragraph at lines 2104--2105
 []|\T1/lmr/m/n/10.95 Random bit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2077--2078
+Underfull \hbox (badness 10000) in paragraph at lines 2105--2106
 []|\T1/lmr/m/n/10.95 ECC, SS
  []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 2078--2079
+Underfull \hbox (badness 5431) in paragraph at lines 2106--2107
 []|\T1/lmr/m/n/10.95 ECC at frag-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
+Underfull \hbox (badness 10000) in paragraph at lines 2109--2110
 []|\T1/lmr/m/n/10.95 Convolution
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
+Underfull \hbox (badness 10000) in paragraph at lines 2109--2110
 \T1/lmr/m/n/10.95 at-ten-u-a-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
+Underfull \hbox (badness 10000) in paragraph at lines 2110--2111
 []|\T1/lmr/m/n/10.95 Erasure of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2082--2083
+Underfull \hbox (badness 10000) in paragraph at lines 2110--2111
 \T1/lmr/m/n/10.95 high-freq.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2083--2084
+Underfull \hbox (badness 10000) in paragraph at lines 2111--2112
 []|\T1/lmr/m/n/10.95 Mid-freq.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2084--2085
+Underfull \hbox (badness 10000) in paragraph at lines 2112--2113
 []|\T1/lmr/m/n/10.95 Avoid high-
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 2087--2088
-\T1/lmr/m/n/10.95 (Eq. []2.27[]) +
+Underfull \hbox (badness 2772) in paragraph at lines 2115--2116
+\T1/lmr/m/n/10.95 (Eq. []2.35[]) +
  []
 
 
-Overfull \hbox (4.68802pt too wide) in paragraph at lines 2089--2090
+Overfull \hbox (4.68802pt too wide) in paragraph at lines 2117--2118
 []|\T1/lmr/m/n/10.95 Redundancy,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2089--2090
+Underfull \hbox (badness 10000) in paragraph at lines 2117--2118
 \T1/lmr/m/n/10.95 frag-men-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2091
+Underfull \hbox (badness 10000) in paragraph at lines 2118--2119
 []|\T1/lmr/m/n/10.95 Distributed frag-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2091
+Underfull \hbox (badness 10000) in paragraph at lines 2118--2119
 \T1/lmr/m/n/10.95 ments max-imise
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2093--2094
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2122
 []|\T1/lmr/m/n/10.95 Interpolation
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 2093--2094
-\T1/lmr/m/n/10.95 (Eq. []2.30[]) +
+Underfull \hbox (badness 2772) in paragraph at lines 2121--2122
+\T1/lmr/m/n/10.95 (Eq. []2.38[]) +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
+Underfull \hbox (badness 10000) in paragraph at lines 2122--2123
 []|\T1/lmr/m/n/10.95 Block mis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2094--2095
+Underfull \hbox (badness 10000) in paragraph at lines 2122--2123
 \T1/lmr/m/n/10.95 align-ment +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2095--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2124
 []|\T1/lmr/m/n/10.95 Invariant
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2095--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2123--2124
 \T1/lmr/m/n/10.95 do-mains,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2125
 []|\T1/lmr/m/n/10.95 Multi-scale re-dun-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2125
 \T1/lmr/m/n/10.95 dant em-bed-ding
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2099--2100
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2128
 []|\T1/lmr/m/n/10.95 Coordinate
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2099--2100
+Underfull \hbox (badness 10000) in paragraph at lines 2127--2128
 \T1/lmr/m/n/10.95 trans-form
  []
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 2099--2100
-\T1/lmr/m/n/10.95 (Eq. []2.31[]) +
+Underfull \hbox (badness 2772) in paragraph at lines 2127--2128
+\T1/lmr/m/n/10.95 (Eq. []2.39[]) +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2100--2101
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2129
 []|\T1/lmr/m/n/10.95 Global syn-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2100--2101
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2129
 \T1/lmr/m/n/10.95 chro-ni-sa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2101--2102
+Underfull \hbox (badness 10000) in paragraph at lines 2129--2130
 []|\T1/lmr/m/n/10.95 Log-polar
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 2101--2102
+Underfull \hbox (badness 1924) in paragraph at lines 2129--2130
 \T1/lmr/m/n/10.95 DFT, tem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2102--2103
+Underfull \hbox (badness 10000) in paragraph at lines 2130--2131
 []|\T1/lmr/m/n/10.95 DFT mag-ni-tude
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2104--2105
+Underfull \hbox (badness 10000) in paragraph at lines 2132--2133
 []|\T1/lmr/m/n/10.95 Compound
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2106
+Underfull \hbox (badness 10000) in paragraph at lines 2133--2134
 []|\T1/lmr/m/n/10.95 Sequential
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2105--2106
+Underfull \hbox (badness 10000) in paragraph at lines 2133--2134
 \T1/lmr/m/n/10.95 com-po-si-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2106--2107
+Underfull \hbox (badness 10000) in paragraph at lines 2134--2135
 []|\T1/lmr/m/n/10.95 Cascaded
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2107--2108
+Underfull \hbox (badness 10000) in paragraph at lines 2135--2136
 []|\T1/lmr/m/n/10.95 Structured
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2107--2108
+Underfull \hbox (badness 10000) in paragraph at lines 2135--2136
 \T1/lmr/m/n/10.95 re-dun-dancy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2114
+Underfull \hbox (badness 10000) in paragraph at lines 2141--2142
 []|\T1/lmr/m/n/10.95 Low dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2114
+Underfull \hbox (badness 10000) in paragraph at lines 2141--2142
 \T1/lmr/m/n/10.95 tor-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2114
+Underfull \hbox (badness 10000) in paragraph at lines 2141--2142
 \T1/lmr/m/n/10.95 struc-tural
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 2114--2115
+Underfull \hbox (badness 4556) in paragraph at lines 2142--2143
 []|\T1/lmr/m/n/10.95 Low per-coefficient
  []
 
 
 
-[38]
-Overfull \hbox (1.06279pt too wide) in paragraph at lines 2138--2139
+[39]
+Overfull \hbox (1.06279pt too wide) in paragraph at lines 2166--2167
 \T1/lmr/m/n/12 The lit-er-a-ture re-viewed in this chap-ter demon-strates sig-n
 if-i-cant progress in the field of im-age steganog-
  []
 
 
 
-[39]
-<Comparison.png, id=1069, 2826.56pt x 1541.76pt>
+[40]
+<Comparison.png, id=1081, 2826.56pt x 1541.76pt>
 File: Comparison.png Graphic file (type png)
 <use Comparison.png>
-Package pdftex.def Info: Comparison.png  used on input line 2156.
+Package pdftex.def Info: Comparison.png  used on input line 2184.
 (pdftex.def)             Requested size: 435.3303pt x 237.44118pt.
 
 
-[40 <./Comparison.png>]
+[41 <./Comparison.png>]
 
-[41]
-Overfull \hbox (8.19243pt too wide) in paragraph at lines 2365--2374
+[42]
+Overfull \hbox (8.19243pt too wide) in paragraph at lines 2393--2402
 [] []\T1/lmr/bx/n/12 Key con-tri-bu-tions.[] \T1/lmr/m/n/12 The pri-mary in-no-
 va-tion in SteganoGAN is a rig-or-ous treat-ment of the capacity--
  []
 
 
 
-[42]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2403.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2403.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2418.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 2418.
-
-
-
 [43]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2431.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2446.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2446.
+
+
 
 [44]
 
@@ -1505,42 +1504,44 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 2418.
 [51]
 
 [52]
+
+[53]
 Chapter 3.
 
 
-[53
+[54
 
 ]
 
-[54]
-
 [55]
-Overfull \hbox (6.92679pt too wide) in paragraph at lines 3226--3226
+
+[56]
+Overfull \hbox (6.92679pt too wide) in paragraph at lines 3254--3254
 |[]\T1/lmr/bx/n/17.28 Computational Com-plex-ity and Prac-ti-cal Con-sid-er-a-t
 ions| 
  []
 
 
 
-[56]
-
 [57]
+
+[58]
 Chapter 4.
-
-
-[58
-
-]
-Chapter 5.
 
 
 [59
 
 ]
+Chapter 5.
+
+
+[60
+
+]
 Chapter 6.
 (./main.bbl
 
-[60
+[61
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
@@ -1549,15 +1550,15 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[61
+[62
 
 ]
 
-[62]
+[63]
 
-[63])
+[64])
 
-[64] (./main.aux)
+[65] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1566,20 +1567,17 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 73AAD644A5B8004D030E37465154DF74;21743.
+(rerunfilecheck)             Checksum: 6176988A1C493FF5E176BCB022A8C005;21736.
  ) 
 Here is how much of TeX's memory you used:
- 34253 strings out of 475178
- 792974 string characters out of 5766539
- 1292195 words of memory out of 5000000
- 56351 multiletter control sequences out of 15000+600000
+ 34263 strings out of 475178
+ 793565 string characters out of 5766539
+ 1292373 words of memory out of 5000000
+ 56352 multiletter control sequences out of 15000+600000
  671980 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,19n,91p,903b,2320s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,19n,91p,904b,2320s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></
 usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/
@@ -1594,10 +1592,10 @@ lic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sbm10.pfb>
-Output written on main.pdf (65 pages, 20975955 bytes).
+Output written on main.pdf (66 pages, 16596502 bytes).
 PDF statistics:
- 1436 PDF objects out of 1440 (max. 8388607)
- 1287 compressed objects within 13 object streams
- 317 named destinations out of 1000 (max. 500000)
+ 1451 PDF objects out of 1728 (max. 8388607)
+ 1300 compressed objects within 13 object streams
+ 326 named destinations out of 1000 (max. 500000)
  828 words of extra memory for PDF output out of 10000 (max. 10000000)
 

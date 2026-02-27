@@ -8,189 +8,189 @@
 \contentsline {section}{\numberline {2.1}Fundamentals of Image Steganography}{10}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Imperceptibility, Capacity, and Robustness Trade-off}{10}{subsection.2.1.1}%
 \contentsline {section}{\numberline {2.2}Spatial Domain Techniques}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Transform Domain Techniques}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Discrete Cosine Transform (DCT)-Based Steganography}{11}{subsection.2.2.2}%
-\contentsline {subsubsection}{Overview of the DCT Transformation}{12}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Transform Domain Techniques}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Discrete Cosine Transform (DCT)-Based Steganography}{12}{subsection.2.3.1}%
+\contentsline {subsubsection}{Overview of the DCT Transformation}{12}{subsection.2.3.1}%
 \contentsline {subsubsection}{Embedding Process in DCT-Based Steganography}{12}{figure.2.2}%
-\contentsline {paragraph}{The YCbCr Components}{12}{Item.1}%
+\contentsline {paragraph}{The YCbCr Components}{13}{Item.1}%
 \contentsline {paragraph}{Mathematical Transformation}{13}{Item.1}%
 \contentsline {paragraph}{Significance for Robust Steganography}{13}{equation.2.4}%
 \contentsline {paragraph}{Frequency Domain Transformation: Block-Based DCT}{13}{Item.3}%
-\contentsline {paragraph}{Block Partitioning}{14}{Item.3}%
+\contentsline {paragraph}{Block Partitioning}{13}{Item.3}%
 \contentsline {paragraph}{Two-Dimensional DCT (2D-DCT)}{14}{Item.3}%
 \contentsline {paragraph}{Coefficient Analysis and Robustness}{14}{equation.2.6}%
 \contentsline {paragraph}{Extraction Process}{15}{figure.2.5}%
-\contentsline {subsubsection}{DCT Method Benefits}{15}{Item.10}%
+\contentsline {subsubsection}{DCT Method Benefits}{16}{Item.10}%
 \contentsline {subsubsection}{Limitations and Challenges}{16}{Item.10}%
-\contentsline {subsection}{\numberline {2.2.3}Discrete Wavelet Transform (DWT)-Based Steganography}{16}{subsection.2.2.3}%
-\contentsline {subsubsection}{Overview of the DWT Decomposition}{16}{subsection.2.2.3}%
-\contentsline {subsubsection}{Embedding Process in DWT-Based Steganography}{16}{figure.2.6}%
-\contentsline {subsubsection}{Extraction Process}{18}{figure.2.7}%
-\contentsline {subsubsection}{Advantages of DWT-Based Steganography}{18}{Item.19}%
-\contentsline {subsubsection}{Limitations and Challenges}{18}{Item.19}%
-\contentsline {subsection}{\numberline {2.2.4}Discrete Fourier Transform (DFT)-Based Steganography}{18}{subsection.2.2.4}%
-\contentsline {subsubsection}{Overview of the DFT Representation}{19}{subsection.2.2.4}%
-\contentsline {subsubsection}{Embedding Process in DFT-Based Steganography}{20}{figure.2.9}%
-\contentsline {subsubsection}{Extraction Process}{21}{figure.2.10}%
+\contentsline {subsection}{\numberline {2.3.2}Discrete Wavelet Transform (DWT)-Based Steganography}{16}{subsection.2.3.2}%
+\contentsline {subsubsection}{Overview of the DWT Decomposition}{16}{subsection.2.3.2}%
+\contentsline {subsubsection}{Embedding Process in DWT-Based Steganography}{17}{figure.2.7}%
+\contentsline {paragraph}{Extraction Process}{18}{equation.2.13}%
+\contentsline {subsubsection}{Advantages of DWT-Based Steganography}{19}{Item.19}%
+\contentsline {subsubsection}{Limitations and Challenges}{19}{Item.19}%
+\contentsline {subsection}{\numberline {2.3.3}Discrete Fourier Transform (DFT)-Based Steganography}{19}{subsection.2.3.3}%
+\contentsline {subsubsection}{Overview of the DFT Representation}{19}{subsection.2.3.3}%
+\contentsline {subsubsection}{Embedding Process in DFT-Based Steganography}{21}{figure.2.9}%
+\contentsline {subsubsection}{Extraction Process}{22}{figure.2.10}%
 \contentsline {subsubsection}{Geometric Invariance Properties}{22}{Item.29}%
-\contentsline {subsubsection}{Advantages of DFT-Based Steganography}{22}{figure.2.11}%
-\contentsline {subsubsection}{Limitations and Challenges}{23}{figure.2.11}%
-\contentsline {section}{\numberline {2.3}Robustness-Oriented Approaches}{23}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Error Correction Coding for Steganographic Robustness}{23}{subsection.2.3.1}%
-\contentsline {paragraph}{Block codes.}{23}{subsection.2.3.1}%
-\contentsline {paragraph}{Convolutional and turbo codes.}{24}{subsection.2.3.1}%
-\contentsline {paragraph}{LDPC codes.}{24}{subsection.2.3.1}%
-\contentsline {paragraph}{Limitations of ECC alone.}{24}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}The Synchronization Problem}{24}{subsection.2.3.2}%
-\contentsline {subsubsection}{Causes and Manifestations}{24}{subsection.2.3.2}%
-\contentsline {subsubsection}{Template-Based Synchronization}{24}{subsection.2.3.2}%
-\contentsline {subsubsection}{Feature-Based Alignment}{25}{subsection.2.3.2}%
-\contentsline {subsubsection}{Invariant-Domain Embedding}{25}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Spread-Spectrum Steganography}{25}{subsection.2.3.3}%
-\contentsline {paragraph}{Informed embedding and dirty-paper coding.}{26}{equation.2.16}%
-\contentsline {paragraph}{Limitations of spread-spectrum methods.}{26}{equation.2.16}%
-\contentsline {subsection}{\numberline {2.3.4}Adaptive Embedding and Perceptual Masking}{26}{subsection.2.3.4}%
-\contentsline {subsubsection}{Texture and Edge Masking}{26}{subsection.2.3.4}%
-\contentsline {subsubsection}{Frequency-Selective Masking}{26}{equation.2.17}%
-\contentsline {subsubsection}{Just-Noticeable Difference Models}{26}{equation.2.17}%
-\contentsline {subsection}{\numberline {2.3.5}Fragmentation, Redundancy, and Distributed Embedding}{27}{subsection.2.3.5}%
-\contentsline {subsubsection}{Redundant Embedding}{27}{subsection.2.3.5}%
-\contentsline {subsubsection}{Erasure-Correcting Codes and Fountain Codes}{27}{subsection.2.3.5}%
-\contentsline {subsubsection}{Inter-Fragment Dependency Graphs}{27}{subsection.2.3.5}%
-\contentsline {subsubsection}{Multi-Domain and Multi-Channel Distribution}{27}{subsection.2.3.5}%
-\contentsline {subsection}{\numberline {2.3.6}Robust Steganography vs.\ Digital Watermarking}{27}{subsection.2.3.6}%
-\contentsline {subsection}{\numberline {2.3.7}Steganalysis and the Detectability–Robustness Trade-off}{28}{subsection.2.3.7}%
-\contentsline {subsubsection}{Classical Steganalysis}{28}{subsection.2.3.7}%
-\contentsline {subsubsection}{Universal Feature-Based Steganalysis}{28}{subsection.2.3.7}%
-\contentsline {subsubsection}{Implications for Robust Steganographic Design}{28}{subsection.2.3.7}%
-\contentsline {subsection}{\numberline {2.3.8}Deep Learning–Based Robust Steganography}{29}{subsection.2.3.8}%
-\contentsline {subsection}{\numberline {2.3.9}Limitations of Current Approaches}{29}{subsection.2.3.9}%
-\contentsline {section}{\numberline {2.4}Attacks and Image Degradation Models}{29}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Signal Processing Attacks}{30}{subsection.2.4.1}%
-\contentsline {subsubsection}{Lossy Compression: JPEG}{30}{subsection.2.4.1}%
-\contentsline {paragraph}{Formal degradation model.}{30}{subsection.2.4.1}%
-\contentsline {paragraph}{Impact on steganographic embedding.}{31}{equation.2.20}%
-\contentsline {paragraph}{JPEG and block boundary alignment.}{31}{equation.2.20}%
-\contentsline {subsubsection}{Additive Noise}{31}{figure.2.12}%
-\contentsline {paragraph}{Formal degradation model.}{32}{figure.2.12}%
-\contentsline {paragraph}{Impact on steganographic embedding.}{32}{equation.2.22}%
-\contentsline {subsubsection}{Filtering Attacks}{32}{equation.2.23}%
-\contentsline {paragraph}{Formal degradation model.}{32}{equation.2.23}%
-\contentsline {paragraph}{Impact on steganographic embedding.}{33}{equation.2.26}%
-\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{33}{equation.2.26}%
-\contentsline {subsection}{\numberline {2.4.2}Geometric Attacks}{33}{subsection.2.4.2}%
-\contentsline {subsubsection}{Cropping}{33}{subsection.2.4.2}%
-\contentsline {paragraph}{Formal degradation model.}{33}{subsection.2.4.2}%
-\contentsline {paragraph}{Synchronisation effect.}{34}{equation.2.29}%
-\contentsline {subsubsection}{Resizing and Resampling}{34}{figure.2.13}%
-\contentsline {paragraph}{Formal degradation model.}{34}{figure.2.13}%
-\contentsline {paragraph}{Impact on steganographic embedding.}{35}{equation.2.30}%
-\contentsline {subsubsection}{Rotation}{35}{equation.2.30}%
-\contentsline {paragraph}{Formal degradation model.}{35}{equation.2.30}%
-\contentsline {paragraph}{Impact on steganographic embedding.}{35}{equation.2.31}%
-\contentsline {subsubsection}{Affine and Projective Transformations}{35}{equation.2.31}%
-\contentsline {subsection}{\numberline {2.4.3}Compound and Pipeline Attacks}{35}{subsection.2.4.3}%
-\contentsline {paragraph}{Social media processing pipelines.}{36}{subsection.2.4.3}%
-\contentsline {paragraph}{Formal compound degradation model.}{36}{table.2.2}%
-\contentsline {paragraph}{Empirical impact.}{36}{equation.2.33}%
-\contentsline {subsection}{\numberline {2.4.4}Steganalytic Attacks}{36}{subsection.2.4.4}%
-\contentsline {subsubsection}{Statistical Detection Principles}{37}{subsection.2.4.4}%
-\contentsline {paragraph}{Classical steganalysis: targeted detectors.}{37}{subsection.2.4.4}%
-\contentsline {paragraph}{Universal steganalysis.}{37}{subsection.2.4.4}%
-\contentsline {paragraph}{Deep learning steganalysis.}{37}{subsection.2.4.4}%
-\contentsline {subsubsection}{Implications for Robustness-Oriented Design}{37}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Unified Attack Summary and Implications for Framework Design}{38}{subsection.2.4.5}%
-\contentsline {section}{\numberline {2.5}Discussion and Research Gap}{39}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Recent Advances in Deep Learning-Based Steganography}{40}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}The Shift Toward End-to-End Learned Steganography}{41}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}HiDDeN: The Foundational Framework (2018)}{41}{subsection.2.6.2}%
-\contentsline {paragraph}{Architecture.}{41}{subsection.2.6.2}%
-\contentsline {paragraph}{Differentiable noise layer.}{41}{subsection.2.6.2}%
-\contentsline {paragraph}{Adversarial imperceptibility.}{42}{subsection.2.6.2}%
-\contentsline {paragraph}{Reported performance.}{42}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}SteganoGAN: High-Capacity GAN-Based Steganography (2019)}{42}{subsection.2.6.3}%
-\contentsline {paragraph}{Key contributions.}{43}{subsection.2.6.3}%
-\contentsline {paragraph}{Relevance to this thesis.}{43}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}ReDMark: Robustness-First Deep Steganography (2021)}{43}{subsection.2.6.4}%
-\contentsline {paragraph}{Architecture and training.}{43}{subsection.2.6.4}%
-\contentsline {paragraph}{Loss function and weight redistribution.}{43}{subsection.2.6.4}%
-\contentsline {paragraph}{Reported performance.}{43}{subsection.2.6.4}%
-\contentsline {paragraph}{Limitations.}{43}{subsection.2.6.4}%
-\contentsline {subsection}{\numberline {2.6.5}Hiding Images in Images: High-Capacity Deep Concealment}{44}{subsection.2.6.5}%
-\contentsline {subsection}{\numberline {2.6.6}Robust Deep Steganography Against Social Network Processing}{44}{subsection.2.6.6}%
-\contentsline {subsection}{\numberline {2.6.7}Attention Mechanisms and Semantic-Aware Embedding}{44}{subsection.2.6.7}%
-\contentsline {subsection}{\numberline {2.6.8}Hybrid Transform-Network Approaches}{45}{subsection.2.6.8}%
-\contentsline {subsection}{\numberline {2.6.9}Deep Learning Steganalysis and Its Impact on Robust Design}{45}{subsection.2.6.9}%
-\contentsline {subsection}{\numberline {2.6.10}Summary Table and Comparative Analysis}{45}{subsection.2.6.10}%
-\contentsline {subsection}{\numberline {2.6.11}Why This Thesis Adopts a Classical Framework}{46}{subsection.2.6.11}%
-\contentsline {paragraph}{Partial recovery as a first-class design objective.}{46}{subsection.2.6.11}%
-\contentsline {paragraph}{Robustness to \emph {unseen} compound attacks.}{46}{subsection.2.6.11}%
-\contentsline {paragraph}{Interpretability and analytical robustness guarantees.}{46}{subsection.2.6.11}%
-\contentsline {paragraph}{Computational accessibility.}{47}{subsection.2.6.11}%
-\contentsline {paragraph}{Modularity and domain expertise.}{47}{subsection.2.6.11}%
-\contentsline {section}{\numberline {2.7}Evaluation Criteria in Steganographic Systems}{47}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Imperceptibility Metrics}{47}{subsection.2.7.1}%
-\contentsline {subsubsection}{Mean Squared Error (MSE)}{47}{subsection.2.7.1}%
-\contentsline {subsubsection}{Peak Signal-to-Noise Ratio (PSNR)}{48}{equation.2.39}%
-\contentsline {paragraph}{Interpretation and thresholds.}{48}{equation.2.40}%
-\contentsline {paragraph}{Limitations.}{48}{equation.2.40}%
-\contentsline {paragraph}{Relationship between PSNR and embedding capacity.}{48}{equation.2.40}%
-\contentsline {subsubsection}{Structural Similarity Index Measure (SSIM)}{49}{equation.2.40}%
-\contentsline {paragraph}{Interpretation.}{49}{equation.2.41}%
-\contentsline {subsubsection}{Relationship Between Imperceptibility Metrics}{50}{figure.2.17}%
-\contentsline {subsection}{\numberline {2.7.2}Robustness Metrics}{50}{subsection.2.7.2}%
-\contentsline {subsubsection}{Bit Error Rate (BER)}{50}{subsection.2.7.2}%
-\contentsline {paragraph}{Interpretation and thresholds.}{50}{equation.2.42}%
-\contentsline {paragraph}{Relationship to error correction coding.}{50}{equation.2.42}%
-\contentsline {paragraph}{BER under partial data loss.}{51}{equation.2.43}%
-\contentsline {subsubsection}{Normalised Correlation (NC)}{51}{equation.2.43}%
-\contentsline {paragraph}{Interpretation.}{51}{equation.2.44}%
-\contentsline {subsection}{\numberline {2.7.3}Partial Recovery Rate (PRR)}{51}{subsection.2.7.3}%
-\contentsline {subsection}{\numberline {2.7.4}Unified View of Evaluation Criteria}{52}{subsection.2.7.4}%
-\contentsline {chapter}{\numberline {3}Proposed Self-Recovering Steganography Framework}{53}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Design Motivation and Objectives}{53}{section.3.1}%
-\contentsline {section}{\numberline {3.2}High-Level System Overview}{53}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Sender-Side Processing Pipeline}{53}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Receiver-Side Processing Pipeline}{54}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Structured Payload Representation}{54}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Payload Components}{54}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Inter-Fragment Relationships}{54}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Fragmentation Strategy}{54}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Fragment Size and Granularity}{54}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Redundancy and Distribution Policy}{55}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Multi-Domain Embedding Strategy}{55}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Spatial Domain Embedding}{55}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Frequency Domain Embedding}{55}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Multi-Scale and Redundant Embedding}{55}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Color Channel Utilization}{55}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Embedding Control and Parameter Selection}{55}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Key-Based Fragment Placement}{55}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Embedding Strength Adaptation}{55}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Damage-Aware Extraction Process}{56}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Fragment Detection and Validation}{56}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Confidence Scoring Mechanism}{56}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Adaptive Fragment Selection}{56}{subsection.3.7.3}%
-\contentsline {section}{\numberline {3.8}Message Reconstruction and Self-Recovery}{56}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Partial Reconstruction Strategy}{56}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Failure Conditions}{56}{subsection.3.8.2}%
-\contentsline {section}{\numberline {3.9}Computational Complexity and Practical Considerations}{56}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Complexity Analysis}{56}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Implementation Constraints}{56}{subsection.3.9.2}%
-\contentsline {section}{\numberline {3.10}Summary of the Proposed Framework}{57}{section.3.10}%
-\contentsline {chapter}{\numberline {4}Implementation and Experimental Setup}{58}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Development Environment}{58}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Dataset Description}{58}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Attack Simulation}{58}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Evaluation Metrics}{58}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Imperceptibility Metrics}{58}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Robustness Metrics}{58}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Results and Discussion}{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Imperceptibility Evaluation}{59}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Robustness Under Image Degradation}{59}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Robustness Under Partial Data Loss}{59}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Comparative Analysis}{59}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Discussion of Results}{59}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{60}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Summary of Findings}{60}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Limitations}{60}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Future Research Directions}{60}{section.6.3}%
+\contentsline {subsubsection}{Advantages of DFT-Based Steganography}{23}{figure.2.11}%
+\contentsline {subsubsection}{Limitations and Challenges}{24}{figure.2.11}%
+\contentsline {section}{\numberline {2.4}Robustness-Oriented Approaches}{24}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Error Correction Coding for Steganographic Robustness}{24}{subsection.2.4.1}%
+\contentsline {paragraph}{Block codes.}{24}{subsection.2.4.1}%
+\contentsline {paragraph}{Convolutional and turbo codes.}{25}{subsection.2.4.1}%
+\contentsline {paragraph}{LDPC codes.}{25}{subsection.2.4.1}%
+\contentsline {paragraph}{Limitations of ECC alone.}{25}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}The Synchronization Problem}{25}{subsection.2.4.2}%
+\contentsline {subsubsection}{Causes and Manifestations}{25}{subsection.2.4.2}%
+\contentsline {subsubsection}{Template-Based Synchronization}{25}{subsection.2.4.2}%
+\contentsline {subsubsection}{Feature-Based Alignment}{26}{subsection.2.4.2}%
+\contentsline {subsubsection}{Invariant-Domain Embedding}{26}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Spread-Spectrum Steganography}{26}{subsection.2.4.3}%
+\contentsline {paragraph}{Informed embedding and dirty-paper coding.}{27}{equation.2.24}%
+\contentsline {paragraph}{Limitations of spread-spectrum methods.}{27}{equation.2.24}%
+\contentsline {subsection}{\numberline {2.4.4}Adaptive Embedding and Perceptual Masking}{27}{subsection.2.4.4}%
+\contentsline {subsubsection}{Texture and Edge Masking}{27}{subsection.2.4.4}%
+\contentsline {subsubsection}{Frequency-Selective Masking}{27}{equation.2.25}%
+\contentsline {subsubsection}{Just-Noticeable Difference Models}{27}{equation.2.25}%
+\contentsline {subsection}{\numberline {2.4.5}Fragmentation, Redundancy, and Distributed Embedding}{28}{subsection.2.4.5}%
+\contentsline {subsubsection}{Redundant Embedding}{28}{subsection.2.4.5}%
+\contentsline {subsubsection}{Erasure-Correcting Codes and Fountain Codes}{28}{subsection.2.4.5}%
+\contentsline {subsubsection}{Inter-Fragment Dependency Graphs}{28}{subsection.2.4.5}%
+\contentsline {subsubsection}{Multi-Domain and Multi-Channel Distribution}{28}{subsection.2.4.5}%
+\contentsline {subsection}{\numberline {2.4.6}Robust Steganography vs.\ Digital Watermarking}{28}{subsection.2.4.6}%
+\contentsline {subsection}{\numberline {2.4.7}Steganalysis and the Detectability–Robustness Trade-off}{29}{subsection.2.4.7}%
+\contentsline {subsubsection}{Classical Steganalysis}{29}{subsection.2.4.7}%
+\contentsline {subsubsection}{Universal Feature-Based Steganalysis}{29}{subsection.2.4.7}%
+\contentsline {subsubsection}{Implications for Robust Steganographic Design}{29}{subsection.2.4.7}%
+\contentsline {subsection}{\numberline {2.4.8}Deep Learning–Based Robust Steganography}{30}{subsection.2.4.8}%
+\contentsline {subsection}{\numberline {2.4.9}Limitations of Current Approaches}{30}{subsection.2.4.9}%
+\contentsline {section}{\numberline {2.5}Attacks and Image Degradation Models}{30}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Signal Processing Attacks}{31}{subsection.2.5.1}%
+\contentsline {subsubsection}{Lossy Compression: JPEG}{31}{subsection.2.5.1}%
+\contentsline {paragraph}{Formal degradation model.}{31}{subsection.2.5.1}%
+\contentsline {paragraph}{Impact on steganographic embedding.}{32}{equation.2.28}%
+\contentsline {paragraph}{JPEG and block boundary alignment.}{32}{equation.2.28}%
+\contentsline {subsubsection}{Additive Noise}{32}{figure.2.12}%
+\contentsline {paragraph}{Formal degradation model.}{33}{figure.2.12}%
+\contentsline {paragraph}{Impact on steganographic embedding.}{33}{equation.2.30}%
+\contentsline {subsubsection}{Filtering Attacks}{33}{equation.2.31}%
+\contentsline {paragraph}{Formal degradation model.}{33}{equation.2.31}%
+\contentsline {paragraph}{Impact on steganographic embedding.}{34}{equation.2.34}%
+\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{34}{equation.2.34}%
+\contentsline {subsection}{\numberline {2.5.2}Geometric Attacks}{34}{subsection.2.5.2}%
+\contentsline {subsubsection}{Cropping}{34}{subsection.2.5.2}%
+\contentsline {paragraph}{Formal degradation model.}{34}{subsection.2.5.2}%
+\contentsline {paragraph}{Synchronisation effect.}{35}{equation.2.37}%
+\contentsline {subsubsection}{Resizing and Resampling}{35}{figure.2.13}%
+\contentsline {paragraph}{Formal degradation model.}{35}{figure.2.13}%
+\contentsline {paragraph}{Impact on steganographic embedding.}{36}{equation.2.38}%
+\contentsline {subsubsection}{Rotation}{36}{equation.2.38}%
+\contentsline {paragraph}{Formal degradation model.}{36}{equation.2.38}%
+\contentsline {paragraph}{Impact on steganographic embedding.}{36}{equation.2.39}%
+\contentsline {subsubsection}{Affine and Projective Transformations}{36}{equation.2.39}%
+\contentsline {subsection}{\numberline {2.5.3}Compound and Pipeline Attacks}{36}{subsection.2.5.3}%
+\contentsline {paragraph}{Social media processing pipelines.}{37}{subsection.2.5.3}%
+\contentsline {paragraph}{Formal compound degradation model.}{37}{table.2.2}%
+\contentsline {paragraph}{Empirical impact.}{37}{equation.2.41}%
+\contentsline {subsection}{\numberline {2.5.4}Steganalytic Attacks}{37}{subsection.2.5.4}%
+\contentsline {subsubsection}{Statistical Detection Principles}{38}{subsection.2.5.4}%
+\contentsline {paragraph}{Classical steganalysis: targeted detectors.}{38}{subsection.2.5.4}%
+\contentsline {paragraph}{Universal steganalysis.}{38}{subsection.2.5.4}%
+\contentsline {paragraph}{Deep learning steganalysis.}{38}{subsection.2.5.4}%
+\contentsline {subsubsection}{Implications for Robustness-Oriented Design}{38}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Unified Attack Summary and Implications for Framework Design}{39}{subsection.2.5.5}%
+\contentsline {section}{\numberline {2.6}Discussion and Research Gap}{40}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Recent Advances in Deep Learning-Based Steganography}{41}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}The Shift Toward End-to-End Learned Steganography}{42}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}HiDDeN: The Foundational Framework (2018)}{42}{subsection.2.7.2}%
+\contentsline {paragraph}{Architecture.}{42}{subsection.2.7.2}%
+\contentsline {paragraph}{Differentiable noise layer.}{42}{subsection.2.7.2}%
+\contentsline {paragraph}{Adversarial imperceptibility.}{43}{subsection.2.7.2}%
+\contentsline {paragraph}{Reported performance.}{43}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}SteganoGAN: High-Capacity GAN-Based Steganography (2019)}{43}{subsection.2.7.3}%
+\contentsline {paragraph}{Key contributions.}{44}{subsection.2.7.3}%
+\contentsline {paragraph}{Relevance to this thesis.}{44}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}ReDMark: Robustness-First Deep Steganography (2021)}{44}{subsection.2.7.4}%
+\contentsline {paragraph}{Architecture and training.}{44}{subsection.2.7.4}%
+\contentsline {paragraph}{Loss function and weight redistribution.}{44}{subsection.2.7.4}%
+\contentsline {paragraph}{Reported performance.}{44}{subsection.2.7.4}%
+\contentsline {paragraph}{Limitations.}{44}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}Hiding Images in Images: High-Capacity Deep Concealment}{45}{subsection.2.7.5}%
+\contentsline {subsection}{\numberline {2.7.6}Robust Deep Steganography Against Social Network Processing}{45}{subsection.2.7.6}%
+\contentsline {subsection}{\numberline {2.7.7}Attention Mechanisms and Semantic-Aware Embedding}{45}{subsection.2.7.7}%
+\contentsline {subsection}{\numberline {2.7.8}Hybrid Transform-Network Approaches}{46}{subsection.2.7.8}%
+\contentsline {subsection}{\numberline {2.7.9}Deep Learning Steganalysis and Its Impact on Robust Design}{46}{subsection.2.7.9}%
+\contentsline {subsection}{\numberline {2.7.10}Summary Table and Comparative Analysis}{46}{subsection.2.7.10}%
+\contentsline {subsection}{\numberline {2.7.11}Why This Thesis Adopts a Classical Framework}{47}{subsection.2.7.11}%
+\contentsline {paragraph}{Partial recovery as a first-class design objective.}{47}{subsection.2.7.11}%
+\contentsline {paragraph}{Robustness to \emph {unseen} compound attacks.}{47}{subsection.2.7.11}%
+\contentsline {paragraph}{Interpretability and analytical robustness guarantees.}{47}{subsection.2.7.11}%
+\contentsline {paragraph}{Computational accessibility.}{48}{subsection.2.7.11}%
+\contentsline {paragraph}{Modularity and domain expertise.}{48}{subsection.2.7.11}%
+\contentsline {section}{\numberline {2.8}Evaluation Criteria in Steganographic Systems}{48}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Imperceptibility Metrics}{48}{subsection.2.8.1}%
+\contentsline {subsubsection}{Mean Squared Error (MSE)}{48}{subsection.2.8.1}%
+\contentsline {subsubsection}{Peak Signal-to-Noise Ratio (PSNR)}{49}{equation.2.47}%
+\contentsline {paragraph}{Interpretation and thresholds.}{49}{equation.2.48}%
+\contentsline {paragraph}{Limitations.}{49}{equation.2.48}%
+\contentsline {paragraph}{Relationship between PSNR and embedding capacity.}{49}{equation.2.48}%
+\contentsline {subsubsection}{Structural Similarity Index Measure (SSIM)}{50}{equation.2.48}%
+\contentsline {paragraph}{Interpretation.}{50}{equation.2.49}%
+\contentsline {subsubsection}{Relationship Between Imperceptibility Metrics}{51}{figure.2.17}%
+\contentsline {subsection}{\numberline {2.8.2}Robustness Metrics}{51}{subsection.2.8.2}%
+\contentsline {subsubsection}{Bit Error Rate (BER)}{51}{subsection.2.8.2}%
+\contentsline {paragraph}{Interpretation and thresholds.}{51}{equation.2.50}%
+\contentsline {paragraph}{Relationship to error correction coding.}{51}{equation.2.50}%
+\contentsline {paragraph}{BER under partial data loss.}{52}{equation.2.51}%
+\contentsline {subsubsection}{Normalised Correlation (NC)}{52}{equation.2.51}%
+\contentsline {paragraph}{Interpretation.}{52}{equation.2.52}%
+\contentsline {subsection}{\numberline {2.8.3}Partial Recovery Rate (PRR)}{52}{subsection.2.8.3}%
+\contentsline {subsection}{\numberline {2.8.4}Unified View of Evaluation Criteria}{53}{subsection.2.8.4}%
+\contentsline {chapter}{\numberline {3}Proposed Self-Recovering Steganography Framework}{54}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Design Motivation and Objectives}{54}{section.3.1}%
+\contentsline {section}{\numberline {3.2}High-Level System Overview}{54}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Sender-Side Processing Pipeline}{54}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Receiver-Side Processing Pipeline}{55}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Structured Payload Representation}{55}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Payload Components}{55}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Inter-Fragment Relationships}{55}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Fragmentation Strategy}{55}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Fragment Size and Granularity}{55}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Redundancy and Distribution Policy}{56}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Multi-Domain Embedding Strategy}{56}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Spatial Domain Embedding}{56}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Frequency Domain Embedding}{56}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Multi-Scale and Redundant Embedding}{56}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Color Channel Utilization}{56}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Embedding Control and Parameter Selection}{56}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Key-Based Fragment Placement}{56}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Embedding Strength Adaptation}{56}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Damage-Aware Extraction Process}{57}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Fragment Detection and Validation}{57}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Confidence Scoring Mechanism}{57}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Adaptive Fragment Selection}{57}{subsection.3.7.3}%
+\contentsline {section}{\numberline {3.8}Message Reconstruction and Self-Recovery}{57}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Partial Reconstruction Strategy}{57}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Failure Conditions}{57}{subsection.3.8.2}%
+\contentsline {section}{\numberline {3.9}Computational Complexity and Practical Considerations}{57}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Complexity Analysis}{57}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Implementation Constraints}{57}{subsection.3.9.2}%
+\contentsline {section}{\numberline {3.10}Summary of the Proposed Framework}{58}{section.3.10}%
+\contentsline {chapter}{\numberline {4}Implementation and Experimental Setup}{59}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Development Environment}{59}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Dataset Description}{59}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Attack Simulation}{59}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Evaluation Metrics}{59}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Imperceptibility Metrics}{59}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Robustness Metrics}{59}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Results and Discussion}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Imperceptibility Evaluation}{60}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Robustness Under Image Degradation}{60}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Robustness Under Partial Data Loss}{60}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Comparative Analysis}{60}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Discussion of Results}{60}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{61}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary of Findings}{61}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitations}{61}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Future Research Directions}{61}{section.6.3}%
