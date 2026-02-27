@@ -66,55 +66,56 @@
 \@writefile{toc}{\contentsline {subsubsection}{Overview of the DWT Decomposition}{16}{subsection.2.3.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces One-level 2D-DWT decomposition producing the LL, LH, HL, and HH sub-bands.}}{17}{figure.2.6}\protected@file@percent }
 \newlabel{fig:dwt_composition}{{2.6}{17}{One-level 2D-DWT decomposition producing the LL, LH, HL, and HH sub-bands}{figure.2.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Embedding Process in DWT-Based Steganography}{17}{figure.2.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces One-level and multi-level DWT decomposition showing LL, LH, HL, and HH sub-bands.}}{18}{figure.2.7}\protected@file@percent }
-\newlabel{fig:dwt_ranges}{{2.7}{18}{One-level and multi-level DWT decomposition showing LL, LH, HL, and HH sub-bands}{figure.2.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces One-level and multi-level DWT decomposition showing LL, LH, HL, and HH sub-bands.}}{17}{figure.2.7}\protected@file@percent }
+\newlabel{fig:dwt_ranges}{{2.7}{17}{One-level and multi-level DWT decomposition showing LL, LH, HL, and HH sub-bands}{figure.2.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Embedding Process in DWT-Based Steganography}{18}{figure.2.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Extraction Process}{18}{equation.2.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Advantages of DWT-Based Steganography}{18}{Item.19}\protected@file@percent }
 \citation{cox2007digital}
 \citation{bracewell2000fourier}
 \citation{mallat1999wavelet}
 \citation{ruanaidh1998rotation}
 \citation{petitcolas1999information}
-\@writefile{toc}{\contentsline {subsubsection}{Advantages of DWT-Based Steganography}{19}{Item.19}\protected@file@percent }
+\citation{oppenheim1981importance}
 \@writefile{toc}{\contentsline {subsubsection}{Limitations and Challenges}{19}{Item.19}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Discrete Fourier Transform (DFT)-Based Steganography}{19}{subsection.2.3.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Overview of the DFT Representation}{19}{subsection.2.3.3}\protected@file@percent }
 \newlabel{eq:dft_forward}{{2.15}{19}{Overview of the DFT Representation}{equation.2.15}{}}
-\citation{oppenheim1981importance}
+\newlabel{eq:dft_inverse}{{2.16}{19}{Overview of the DFT Representation}{equation.2.16}{}}
+\newlabel{eq:dft_polar}{{2.17}{19}{Overview of the DFT Representation}{equation.2.17}{}}
 \citation{marvel1999spread}
-\newlabel{eq:dft_inverse}{{2.16}{20}{Overview of the DFT Representation}{equation.2.16}{}}
-\newlabel{eq:dft_polar}{{2.17}{20}{Overview of the DFT Representation}{equation.2.17}{}}
+\citation{cooley1965algorithm}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Mathematical visualization of 2D DFT basis functions showing sinusoidal patterns at various frequencies and orientations.}}{20}{figure.2.8}\protected@file@percent }
 \newlabel{fig:dft_process}{{2.8}{20}{Mathematical visualization of 2D DFT basis functions showing sinusoidal patterns at various frequencies and orientations}{figure.2.8}{}}
-\citation{cooley1965algorithm}
+\@writefile{toc}{\contentsline {subsubsection}{Embedding Process in DFT-Based Steganography}{20}{figure.2.9}\protected@file@percent }
 \citation{solachidis2001circularly}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Centred 2D DFT magnitude spectrum of a natural image (log scale). The DC component appears as the bright spot at the centre. Low-frequency coefficients cluster near the centre, mid-frequency coefficients occupy the intermediate ring, and high-frequency coefficients are located at the periphery. Steganographic embedding targets the mid-frequency ring to balance robustness and imperceptibility.}}{21}{figure.2.9}\protected@file@percent }
 \newlabel{fig:dft_spectrum}{{2.9}{21}{Centred 2D DFT magnitude spectrum of a natural image (log scale). The DC component appears as the bright spot at the centre. Low-frequency coefficients cluster near the centre, mid-frequency coefficients occupy the intermediate ring, and high-frequency coefficients are located at the periphery. Steganographic embedding targets the mid-frequency ring to balance robustness and imperceptibility}{figure.2.9}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Embedding Process in DFT-Based Steganography}{21}{figure.2.9}\protected@file@percent }
 \newlabel{eq:dft_region}{{2.18}{21}{Embedding Process in DFT-Based Steganography}{equation.2.18}{}}
 \newlabel{eq:dft_embed}{{2.19}{21}{Embedding Process in DFT-Based Steganography}{equation.2.19}{}}
 \newlabel{eq:dft_stego_coeff}{{2.20}{21}{Embedding Process in DFT-Based Steganography}{equation.2.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Extraction Process}{21}{figure.2.10}\protected@file@percent }
 \citation{ruanaidh1998rotation}
 \citation{bracewell2000fourier}
+\citation{solachidis2001circularly}
+\citation{solachidis2001circularly}
+\citation{solachidis2001circularly}
+\citation{bracewell2000fourier}
+\citation{ruanaidh1998rotation}
 \citation{solachidis2001circularly}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces DFT-based embedding pipeline: the cover image is converted to YCbCr, the forward DFT is applied to the luminance channel, mid-frequency magnitude coefficients are modified according to the secret message bits, and the inverse DFT reconstructs the stego-image in the spatial domain.}}{22}{figure.2.10}\protected@file@percent }
 \newlabel{fig:dft_pipeline}{{2.10}{22}{DFT-based embedding pipeline: the cover image is converted to YCbCr, the forward DFT is applied to the luminance channel, mid-frequency magnitude coefficients are modified according to the secret message bits, and the inverse DFT reconstructs the stego-image in the spatial domain}{figure.2.10}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Extraction Process}{22}{figure.2.10}\protected@file@percent }
 \newlabel{eq:dft_extract}{{2.21}{22}{Extraction Process}{equation.2.21}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Geometric Invariance Properties}{22}{Item.29}\protected@file@percent }
-\citation{solachidis2001circularly}
-\citation{solachidis2001circularly}
-\citation{bracewell2000fourier}
-\citation{ruanaidh1998rotation}
-\citation{solachidis2001circularly}
+\newlabel{eq:dft_translation}{{2.22}{22}{Geometric Invariance Properties}{equation.2.22}{}}
 \citation{marvel1999spread}
 \citation{petitcolas1999information}
-\newlabel{eq:dft_translation}{{2.22}{23}{Geometric Invariance Properties}{equation.2.22}{}}
+\citation{cox2007digital}
+\citation{Fridrich2012}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Rotation invariance of DFT magnitude-based embedding. Spatial rotation by angle $\theta $ rotates the entire magnitude spectrum by the same angle, moving the embedded coefficient from $E$ to $E'$. Because the embedding ring $\mathcal  {R}$ is circularly symmetric (dashed orange), $E'$ remains inside $\mathcal  {R}$ regardless of $\theta $, allowing extraction without any geometric re-synchronisation \cite  {solachidis2001circularly}.}}{23}{figure.2.11}\protected@file@percent }
 \newlabel{fig:dft_rotation}{{2.11}{23}{Rotation invariance of DFT magnitude-based embedding. Spatial rotation by angle $\theta $ rotates the entire magnitude spectrum by the same angle, moving the embedded coefficient from $E$ to $E'$. Because the embedding ring $\mathcal {R}$ is circularly symmetric (dashed orange), $E'$ remains inside $\mathcal {R}$ regardless of $\theta $, allowing extraction without any geometric re-synchronisation \cite {solachidis2001circularly}}{figure.2.11}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Advantages of DFT-Based Steganography}{23}{figure.2.11}\protected@file@percent }
-\citation{cox2007digital}
-\citation{Fridrich2012}
+\@writefile{toc}{\contentsline {subsubsection}{Limitations and Challenges}{23}{figure.2.11}\protected@file@percent }
 \citation{cooley1965algorithm}
 \citation{ruanaidh1998rotation}
 \citation{cox2007digital}
@@ -123,32 +124,32 @@
 \citation{petitcolas1999information}
 \citation{proakis2008digital}
 \citation{marvel1999spread}
-\@writefile{toc}{\contentsline {subsubsection}{Limitations and Challenges}{24}{figure.2.11}\protected@file@percent }
+\citation{johnson1998exploring}
+\citation{cox2007digital}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Robustness-Oriented Approaches}{24}{section.2.4}\protected@file@percent }
 \newlabel{sec:robustness_approaches}{{2.4}{24}{Robustness-Oriented Approaches}{section.2.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Error Correction Coding for Steganographic Robustness}{24}{subsection.2.4.1}\protected@file@percent }
 \newlabel{subsec:ecc}{{2.4.1}{24}{Error Correction Coding for Steganographic Robustness}{subsection.2.4.1}{}}
 \@writefile{toc}{\contentsline {paragraph}{Block codes.}{24}{subsection.2.4.1}\protected@file@percent }
-\citation{johnson1998exploring}
-\citation{cox2007digital}
+\@writefile{toc}{\contentsline {paragraph}{Convolutional and turbo codes.}{24}{subsection.2.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{LDPC codes.}{24}{subsection.2.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations of ECC alone.}{24}{subsection.2.4.1}\protected@file@percent }
 \citation{ruanaidh1998rotation}
 \citation{petitcolas1999information}
 \citation{cox2007digital}
 \citation{ruanaidh1998rotation}
 \citation{Fridrich2012}
 \citation{ruanaidh1998rotation}
-\@writefile{toc}{\contentsline {paragraph}{Convolutional and turbo codes.}{25}{subsection.2.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{LDPC codes.}{25}{subsection.2.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Limitations of ECC alone.}{25}{subsection.2.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}The Synchronization Problem}{25}{subsection.2.4.2}\protected@file@percent }
-\newlabel{subsec:sync_problem}{{2.4.2}{25}{The Synchronization Problem}{subsection.2.4.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Causes and Manifestations}{25}{subsection.2.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Template-Based Synchronization}{25}{subsection.2.4.2}\protected@file@percent }
 \citation{kutter1999digital}
 \citation{solachidis2004fourier}
 \citation{ruanaidh1998rotation}
 \citation{petitcolas1999information}
 \citation{cox2007}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}The Synchronization Problem}{25}{subsection.2.4.2}\protected@file@percent }
+\newlabel{subsec:sync_problem}{{2.4.2}{25}{The Synchronization Problem}{subsection.2.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Causes and Manifestations}{25}{subsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Template-Based Synchronization}{25}{subsection.2.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Feature-Based Alignment}{25}{subsection.2.4.2}\protected@file@percent }
 \citation{oppenheim1981importance}
 \citation{ruanaidh1998rotation}
 \citation{solachidis2001circularly}
@@ -160,14 +161,15 @@
 \citation{chen2001quantization}
 \citation{barni2001improved}
 \citation{proakis2008digital}
-\@writefile{toc}{\contentsline {subsubsection}{Feature-Based Alignment}{26}{subsection.2.4.2}\protected@file@percent }
+\citation{cox2007digital}
+\citation{podilchuk2001image}
 \@writefile{toc}{\contentsline {subsubsection}{Invariant-Domain Embedding}{26}{subsection.2.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Spread-Spectrum Steganography}{26}{subsection.2.4.3}\protected@file@percent }
 \newlabel{subsec:spread_spectrum}{{2.4.3}{26}{Spread-Spectrum Steganography}{subsection.2.4.3}{}}
 \newlabel{eq:ss_embed}{{2.23}{26}{Spread-Spectrum Steganography}{equation.2.23}{}}
 \newlabel{eq:ss_extract}{{2.24}{26}{Spread-Spectrum Steganography}{equation.2.24}{}}
-\citation{cox2007digital}
-\citation{podilchuk2001image}
+\@writefile{toc}{\contentsline {paragraph}{Informed embedding and dirty-paper coding.}{26}{equation.2.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations of spread-spectrum methods.}{26}{equation.2.24}\protected@file@percent }
 \citation{gonzalez2008digital}
 \citation{podilchuk2001image}
 \citation{cox2007}
@@ -175,17 +177,18 @@
 \citation{petitcolas1999information}
 \citation{cox2007digital}
 \citation{podilchuk2001image}
-\@writefile{toc}{\contentsline {paragraph}{Informed embedding and dirty-paper coding.}{27}{equation.2.24}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Limitations of spread-spectrum methods.}{27}{equation.2.24}\protected@file@percent }
+\citation{petitcolas1999information}
+\citation{cox2007}
+\citation{johnson1998exploring}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.4}Adaptive Embedding and Perceptual Masking}{27}{subsection.2.4.4}\protected@file@percent }
 \newlabel{subsec:adaptive}{{2.4.4}{27}{Adaptive Embedding and Perceptual Masking}{subsection.2.4.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Texture and Edge Masking}{27}{subsection.2.4.4}\protected@file@percent }
 \newlabel{eq:adaptive_strength}{{2.25}{27}{Texture and Edge Masking}{equation.2.25}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Frequency-Selective Masking}{27}{equation.2.25}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Just-Noticeable Difference Models}{27}{equation.2.25}\protected@file@percent }
-\citation{petitcolas1999information}
-\citation{cox2007}
-\citation{johnson1998exploring}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.5}Fragmentation, Redundancy, and Distributed Embedding}{27}{subsection.2.4.5}\protected@file@percent }
+\newlabel{subsec:fragmentation}{{2.4.5}{27}{Fragmentation, Redundancy, and Distributed Embedding}{subsection.2.4.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Redundant Embedding}{27}{subsection.2.4.5}\protected@file@percent }
 \citation{proakis2008digital}
 \citation{proakis2008digital}
 \citation{cox2007digital}
@@ -194,18 +197,15 @@
 \citation{barni2001improved}
 \citation{cox2007}
 \citation{johnson1998steganography}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.5}Fragmentation, Redundancy, and Distributed Embedding}{28}{subsection.2.4.5}\protected@file@percent }
-\newlabel{subsec:fragmentation}{{2.4.5}{28}{Fragmentation, Redundancy, and Distributed Embedding}{subsection.2.4.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Redundant Embedding}{28}{subsection.2.4.5}\protected@file@percent }
+\citation{petitcolas1999information}
+\citation{provos2003hide}
+\citation{johnson1998exploring}
+\citation{Fridrich2012}
 \@writefile{toc}{\contentsline {subsubsection}{Erasure-Correcting Codes and Fountain Codes}{28}{subsection.2.4.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Inter-Fragment Dependency Graphs}{28}{subsection.2.4.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Multi-Domain and Multi-Channel Distribution}{28}{subsection.2.4.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.6}Robust Steganography vs.\ Digital Watermarking}{28}{subsection.2.4.6}\protected@file@percent }
 \newlabel{subsec:stego_vs_watermark}{{2.4.6}{28}{Robust Steganography vs.\ Digital Watermarking}{subsection.2.4.6}{}}
-\citation{petitcolas1999information}
-\citation{provos2003hide}
-\citation{johnson1998exploring}
-\citation{Fridrich2012}
 \citation{Fridrich2012}
 \citation{petitcolas1999information}
 \citation{provos2003hide}
@@ -219,10 +219,10 @@
 \@writefile{toc}{\contentsline {subsubsection}{Classical Steganalysis}{29}{subsection.2.4.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Universal Feature-Based Steganalysis}{29}{subsection.2.4.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Implications for Robust Steganographic Design}{29}{subsection.2.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.8}Deep Learning–Based Robust Steganography}{29}{subsection.2.4.8}\protected@file@percent }
+\newlabel{subsec:deep_learning}{{2.4.8}{29}{Deep Learning–Based Robust Steganography}{subsection.2.4.8}{}}
 \citation{petitcolas1999information}
 \citation{cox2007digital}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.8}Deep Learning–Based Robust Steganography}{30}{subsection.2.4.8}\protected@file@percent }
-\newlabel{subsec:deep_learning}{{2.4.8}{30}{Deep Learning–Based Robust Steganography}{subsection.2.4.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4.9}Limitations of Current Approaches}{30}{subsection.2.4.9}\protected@file@percent }
 \newlabel{subsec:gap_revisited}{{2.4.9}{30}{Limitations of Current Approaches}{subsection.2.4.9}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of robustness-oriented steganographic approaches.}}{30}{table.2.1}\protected@file@percent }
@@ -231,6 +231,7 @@
 \newlabel{sec:attacks}{{2.5}{30}{Attacks and Image Degradation Models}{section.2.5}{}}
 \citation{wallace1992jpeg}
 \citation{gonzalez2008digital}
+\citation{provos2003hide}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Signal Processing Attacks}{31}{subsection.2.5.1}\protected@file@percent }
 \newlabel{subsec:signal_attacks}{{2.5.1}{31}{Signal Processing Attacks}{subsection.2.5.1}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Lossy Compression: JPEG}{31}{subsection.2.5.1}\protected@file@percent }
@@ -238,22 +239,23 @@
 \newlabel{eq:jpeg_quant}{{2.26}{31}{Formal degradation model}{equation.2.26}{}}
 \newlabel{eq:jpeg_error}{{2.27}{31}{Formal degradation model}{equation.2.27}{}}
 \newlabel{eq:jpeg_mse}{{2.28}{31}{Formal degradation model}{equation.2.28}{}}
-\citation{provos2003hide}
+\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{31}{equation.2.28}\protected@file@percent }
 \citation{cox2007digital}
 \citation{petitcolas1999information}
 \citation{cox2007digital}
 \citation{petitcolas1999information}
 \citation{gonzalez2008digital}
-\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{32}{equation.2.28}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{JPEG and block boundary alignment.}{32}{equation.2.28}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Illustrative bit error rate (BER) as a function of JPEG quality factor for four embedding domains. Spatial LSB embedding is almost entirely destroyed below QF\,=\,90, while transform-domain methods show substantially better survival. The dotted line marks the $5\%$ BER threshold below which error correction coding can typically achieve full recovery. Curves are representative of trends reported in the literature \cite  {cox2007digital, petitcolas1999information}.}}{32}{figure.2.12}\protected@file@percent }
 \newlabel{fig:jpeg_ber}{{2.12}{32}{Illustrative bit error rate (BER) as a function of JPEG quality factor for four embedding domains. Spatial LSB embedding is almost entirely destroyed below QF\,=\,90, while transform-domain methods show substantially better survival. The dotted line marks the $5\%$ BER threshold below which error correction coding can typically achieve full recovery. Curves are representative of trends reported in the literature \cite {cox2007digital, petitcolas1999information}}{figure.2.12}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Additive Noise}{32}{figure.2.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{32}{figure.2.12}\protected@file@percent }
+\newlabel{eq:awgn}{{2.29}{32}{Formal degradation model}{equation.2.29}{}}
+\newlabel{eq:snr}{{2.30}{32}{Formal degradation model}{equation.2.30}{}}
 \citation{marvel1999spread}
 \citation{gonzalez2008digital}
-\@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{33}{figure.2.12}\protected@file@percent }
-\newlabel{eq:awgn}{{2.29}{33}{Formal degradation model}{equation.2.29}{}}
-\newlabel{eq:snr}{{2.30}{33}{Formal degradation model}{equation.2.30}{}}
+\citation{cox2007digital}
+\citation{wengrowski2019light}
 \@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{33}{equation.2.30}\protected@file@percent }
 \newlabel{eq:ss_snr}{{2.31}{33}{Impact on steganographic embedding}{equation.2.31}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Filtering Attacks}{33}{equation.2.31}\protected@file@percent }
@@ -261,12 +263,10 @@
 \newlabel{eq:lpf}{{2.32}{33}{Formal degradation model}{equation.2.32}{}}
 \newlabel{eq:gaussian_kernel}{{2.33}{33}{Formal degradation model}{equation.2.33}{}}
 \newlabel{eq:lpf_freq}{{2.34}{33}{Formal degradation model}{equation.2.34}{}}
-\citation{cox2007digital}
-\citation{wengrowski2019light}
+\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{33}{equation.2.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{33}{equation.2.34}\protected@file@percent }
 \citation{ruanaidh1998rotation}
 \citation{cox2007digital}
-\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{34}{equation.2.34}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Colour Space Conversion and Format Conversion}{34}{equation.2.34}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Geometric Attacks}{34}{subsection.2.5.2}\protected@file@percent }
 \newlabel{subsec:geometric_attacks}{{2.5.2}{34}{Geometric Attacks}{subsection.2.5.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Cropping}{34}{subsection.2.5.2}\protected@file@percent }
@@ -274,21 +274,27 @@
 \newlabel{eq:crop}{{2.35}{34}{Formal degradation model}{equation.2.35}{}}
 \newlabel{eq:crop_fraction}{{2.36}{34}{Formal degradation model}{equation.2.36}{}}
 \newlabel{eq:crop_fragments}{{2.37}{34}{Formal degradation model}{equation.2.37}{}}
+\@writefile{toc}{\contentsline {paragraph}{Synchronisation effect.}{34}{equation.2.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Resizing and Resampling}{34}{figure.2.13}\protected@file@percent }
 \citation{gonzalez2008digital}
 \citation{marvel1999spread}
-\@writefile{toc}{\contentsline {paragraph}{Synchronisation effect.}{35}{equation.2.37}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.13}{\ignorespaces Effect of cropping on block-based DCT embedding. Column~0 (shaded red, left) is removed by the crop. Because the extractor anchors its $8\times 8$ block grid to the top-left corner of the received image, the entire grid shifts by one block position. The extractor reads coefficients from the wrong blocks (marked~?), even though the embedded blocks~E were not themselves removed. This synchronisation failure produces a near-random BER regardless of the signal-level embedding quality.}}{35}{figure.2.13}\protected@file@percent }
 \newlabel{fig:crop_misalignment}{{2.13}{35}{Effect of cropping on block-based DCT embedding. Column~0 (shaded red, left) is removed by the crop. Because the extractor anchors its $8\times 8$ block grid to the top-left corner of the received image, the entire grid shifts by one block position. The extractor reads coefficients from the wrong blocks (marked~?), even though the embedded blocks~E were not themselves removed. This synchronisation failure produces a near-random BER regardless of the signal-level embedding quality}{figure.2.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Resizing and Resampling}{35}{figure.2.13}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{35}{figure.2.13}\protected@file@percent }
 \newlabel{eq:resize}{{2.38}{35}{Formal degradation model}{equation.2.38}{}}
+\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{35}{equation.2.38}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Rotation}{35}{equation.2.38}\protected@file@percent }
 \citation{bracewell2000fourier}
 \citation{ruanaidh1998rotation}
 \citation{kutter1999digital}
 \citation{cox2007digital}
 \citation{petitcolas1999information}
-\@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{36}{equation.2.38}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Rotation}{36}{equation.2.38}\protected@file@percent }
+\citation{jia2021mbrs}
+\citation{wengrowski2019light}
+\citation{petitcolas1999information}
+\citation{jia2021mbrs}
+\citation{wengrowski2019light}
+\citation{petitcolas1999information}
 \@writefile{toc}{\contentsline {paragraph}{Formal degradation model.}{36}{equation.2.38}\protected@file@percent }
 \newlabel{eq:rotation}{{2.39}{36}{Formal degradation model}{equation.2.39}{}}
 \@writefile{toc}{\contentsline {paragraph}{Impact on steganographic embedding.}{36}{equation.2.39}\protected@file@percent }
@@ -296,42 +302,36 @@
 \newlabel{eq:affine}{{2.40}{36}{Affine and Projective Transformations}{equation.2.40}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Compound and Pipeline Attacks}{36}{subsection.2.5.3}\protected@file@percent }
 \newlabel{subsec:compound_attacks}{{2.5.3}{36}{Compound and Pipeline Attacks}{subsection.2.5.3}{}}
-\citation{jia2021mbrs}
-\citation{wengrowski2019light}
-\citation{petitcolas1999information}
-\citation{jia2021mbrs}
-\citation{wengrowski2019light}
-\citation{petitcolas1999information}
+\@writefile{toc}{\contentsline {paragraph}{Social media processing pipelines.}{36}{subsection.2.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Formal compound degradation model.}{36}{table.2.2}\protected@file@percent }
+\newlabel{eq:compound}{{2.41}{36}{Formal compound degradation model}{equation.2.41}{}}
 \citation{jia2021mbrs}
 \citation{cox2007digital}
 \citation{Fridrich2012}
 \citation{Fridrich2012}
 \citation{fridrich2004attacks}
-\@writefile{toc}{\contentsline {paragraph}{Social media processing pipelines.}{37}{subsection.2.5.3}\protected@file@percent }
+\citation{westfeld2001f5}
+\citation{provos2003hide}
 \@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Documented image processing operations applied by major social media and messaging platforms to uploaded images. The combination of these operations constitutes a compound attack on embedded steganographic payloads. QF: JPEG quality factor. Information compiled from \cite  {jia2021mbrs, wengrowski2019light, petitcolas1999information}.}}{37}{table.2.2}\protected@file@percent }
 \newlabel{tab:platform_pipelines}{{2.2}{37}{Documented image processing operations applied by major social media and messaging platforms to uploaded images. The combination of these operations constitutes a compound attack on embedded steganographic payloads. QF: JPEG quality factor. Information compiled from \cite {jia2021mbrs, wengrowski2019light, petitcolas1999information}}{table.2.2}{}}
-\@writefile{toc}{\contentsline {paragraph}{Formal compound degradation model.}{37}{table.2.2}\protected@file@percent }
-\newlabel{eq:compound}{{2.41}{37}{Formal compound degradation model}{equation.2.41}{}}
 \@writefile{toc}{\contentsline {paragraph}{Empirical impact.}{37}{equation.2.41}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.14}{\ignorespaces A typical social media compound attack pipeline applied to a stego-image. Each stage introduces a distinct type of degradation: resizing causes block misalignment and acts as a low-pass filter; JPEG recompression introduces quantisation error in DCT coefficients; format conversion may introduce additional colour-space transformations. The cumulative effect is far more destructive than any single attack alone.}}{37}{figure.2.14}\protected@file@percent }
 \newlabel{fig:compound_pipeline}{{2.14}{37}{A typical social media compound attack pipeline applied to a stego-image. Each stage introduces a distinct type of degradation: resizing causes block misalignment and acts as a low-pass filter; JPEG recompression introduces quantisation error in DCT coefficients; format conversion may introduce additional colour-space transformations. The cumulative effect is far more destructive than any single attack alone}{figure.2.14}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.4}Steganalytic Attacks}{37}{subsection.2.5.4}\protected@file@percent }
 \newlabel{subsec:attack_steganalysis}{{2.5.4}{37}{Steganalytic Attacks}{subsection.2.5.4}{}}
-\citation{westfeld2001f5}
-\citation{provos2003hide}
+\@writefile{toc}{\contentsline {subsubsection}{Statistical Detection Principles}{37}{subsection.2.5.4}\protected@file@percent }
 \citation{Fridrich2012}
 \citation{boroumand2019deep}
 \citation{xu2016structural}
 \citation{yedroudj2018yenet}
 \citation{Fridrich2012}
-\@writefile{toc}{\contentsline {subsubsection}{Statistical Detection Principles}{38}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Classical steganalysis: targeted detectors.}{38}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Universal steganalysis.}{38}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Deep learning steganalysis.}{38}{subsection.2.5.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Implications for Robustness-Oriented Design}{38}{subsection.2.5.4}\protected@file@percent }
 \newlabel{eq:detectability_tradeoff}{{2.42}{38}{Implications for Robustness-Oriented Design}{equation.2.42}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.5}Unified Attack Summary and Implications for Framework Design}{39}{subsection.2.5.5}\protected@file@percent }
-\newlabel{subsec:attack_summary}{{2.5.5}{39}{Unified Attack Summary and Implications for Framework Design}{subsection.2.5.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.5}Unified Attack Summary and Implications for Framework Design}{38}{subsection.2.5.5}\protected@file@percent }
+\newlabel{subsec:attack_summary}{{2.5.5}{38}{Unified Attack Summary and Implications for Framework Design}{subsection.2.5.5}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.3}{\ignorespaces Unified summary of attack types, degradation mechanisms, failure modes, and implications for the proposed self-recovering framework. BER: Bit Error Rate; ECC: Error Correction Code; SS: Spread Spectrum; PRR: Partial Recovery Rate.}}{39}{table.2.3}\protected@file@percent }
 \newlabel{tab:attack_summary}{{2.3}{39}{Unified summary of attack types, degradation mechanisms, failure modes, and implications for the proposed self-recovering framework. BER: Bit Error Rate; ECC: Error Correction Code; SS: Spread Spectrum; PRR: Partial Recovery Rate}{table.2.3}{}}
 \citation{cox2007digital}
@@ -341,9 +341,9 @@
 \citation{cox2007digital}
 \citation{provos2003hide}
 \citation{Fridrich2012}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Discussion and Research Gap}{40}{section.2.6}\protected@file@percent }
 \citation{hayes2017}
 \citation{ye2017}
-\@writefile{toc}{\contentsline {section}{\numberline {2.6}Discussion and Research Gap}{40}{section.2.6}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.15}{\ignorespaces Comparison between embedding-centric robustness and payload-oriented survivability.}}{41}{figure.2.15}\protected@file@percent }
 \newlabel{fig: Comparison between embedding-centric robustness and payload-oriented survivability}{{2.15}{41}{Comparison between embedding-centric robustness and payload-oriented survivability}{figure.2.15}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.7}Recent Advances in Deep Learning-Based Steganography}{41}{section.2.7}\protected@file@percent }
@@ -382,13 +382,13 @@
 \@writefile{toc}{\contentsline {paragraph}{Architecture and training.}{44}{subsection.2.7.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Loss function and weight redistribution.}{44}{subsection.2.7.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Reported performance.}{44}{subsection.2.7.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Limitations.}{44}{subsection.2.7.4}\protected@file@percent }
 \citation{baluja2017hiding}
 \citation{lu2021large}
 \citation{dinh2017density}
 \citation{wengrowski2019light}
 \citation{jia2021mbrs}
 \citation{luo2020distortion}
+\@writefile{toc}{\contentsline {paragraph}{Limitations.}{45}{subsection.2.7.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.7.5}Hiding Images in Images: High-Capacity Deep Concealment}{45}{subsection.2.7.5}\protected@file@percent }
 \newlabel{subsec:hiding_images}{{2.7.5}{45}{Hiding Images in Images: High-Capacity Deep Concealment}{subsection.2.7.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.7.6}Robust Deep Steganography Against Social Network Processing}{45}{subsection.2.7.6}\protected@file@percent }
