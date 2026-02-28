@@ -1,0 +1,319 @@
+\begin{thebibliography}{10}
+
+\bibitem{cox2007digital}
+Ingemar Cox, Matthew Miller, Jeffrey Bloom, Jessica Fridrich, and Ton Kalker.
+\newblock {\em Digital Watermarking and Steganography}.
+\newblock Morgan Kaufmann, 2nd edition, 2007.
+
+\bibitem{petitcolas1999information}
+Fabien A.~P. Petitcolas, Ross~J. Anderson, and Markus~G. Kuhn.
+\newblock Information hiding—a survey.
+\newblock {\em Proceedings of the IEEE}, 87(7):1062--1078, 1999.
+
+\bibitem{jia2021mbrs}
+Zhaoyang Jia, Han Fang, and Weiming Zhang.
+\newblock {MBRS}: Enhancing robustness of {DNN}-based watermarking by
+  mini-batch of real and simulated {JPEG} compression.
+\newblock In {\em Proceedings of the 29th ACM International Conference on
+  Multimedia (ACM MM)}, pages 41--49, 2021.
+
+\bibitem{wengrowski2019light}
+Eric Wengrowski and Kristin Dana.
+\newblock Light field messaging with deep photographic steganography.
+\newblock pages 1515--1524, 2019.
+
+\bibitem{moerland2005steganography}
+T.~Moerland.
+\newblock Steganography and steganalysis.
+\newblock Technical Report~1, Leiden Institute of Advanced Computing Science,
+  2005.
+\newblock Available at: \url{https://www.liacs.nl/home/tmoerl/privtech.pdf}.
+
+\bibitem{gonzalez2008digital}
+Rafael~C. Gonzalez and Richard~E. Woods.
+\newblock {\em Digital Image Processing}.
+\newblock Prentice Hall, 3rd edition, 2008.
+
+\bibitem{proakis2008digital}
+John~G. Proakis and Masoud Salehi.
+\newblock {\em Digital Communications}.
+\newblock McGraw-Hill, New York, NY, USA, 5th edition, 2008.
+
+\bibitem{morkel2005overview}
+Tayana Morkel, Jan~HP Eloff, and Martin~S Olivier.
+\newblock An overview of image steganography.
+\newblock Number~2, 2005.
+
+\bibitem{Fridrich2012}
+Jessica Fridrich and Jan Kodovský.
+\newblock Rich models for steganalysis of digital images.
+\newblock {\em IEEE Transactions on Information Forensics and Security},
+  7(3):868--882, 2012.
+
+\bibitem{provos2003hide}
+Niels Provos and Peter Honeyman.
+\newblock Hide and seek: An introduction to steganography.
+\newblock In {\em IEEE Security \& Privacy}, pages 32--44, 2003.
+
+\bibitem{johnson1998exploring}
+Neil~F. Johnson and Sushil Jajodia.
+\newblock Exploring steganography: Seeing the unseen.
+\newblock {\em IEEE Computer}, 31(2):26--34, 1998.
+
+\bibitem{mallat1999wavelet}
+St{\'e}phane Mallat.
+\newblock {\em A Wavelet Tour of Signal Processing}.
+\newblock Academic Press, 1999.
+
+\bibitem{chen2006dwt}
+Po-Yueh Chen and Hung-Ju Lin.
+\newblock A dwt based approach for image steganography.
+\newblock {\em International Journal of Applied Science and Engineering},
+  4(3):275--290, 2006.
+
+\bibitem{wallace1992jpeg}
+Gregory~K. Wallace.
+\newblock The jpeg still picture compression standard.
+\newblock {\em IEEE Transactions on Consumer Electronics}, 38(1):xviii--xxxiv,
+  1992.
+
+\bibitem{mallat1989theory}
+Stephane~G. Mallat.
+\newblock A theory for multiresolution signal decomposition: The wavelet
+  representation.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  11(7):674--693, 1989.
+
+\bibitem{bracewell2000fourier}
+Ronald~N. Bracewell.
+\newblock {\em The Fourier Transform and Its Applications}.
+\newblock McGraw-Hill, 2000.
+
+\bibitem{ruanaidh1998rotation}
+J.~J. K.~{\'O} Ruanaidh and T.~Pun.
+\newblock Rotation, scale and translation invariant digital image watermarking.
+\newblock In {\em IEEE International Conference on Image Processing}, 1998.
+
+\bibitem{solachidis2001circularly}
+V.~Solachidis and I.~Pitas.
+\newblock Circularly symmetric watermark embedding in 2-d dft domain.
+\newblock In {\em IEEE Transactions on Image Processing}, volume~10, pages
+  1741--1753, 2001.
+
+\bibitem{marvel1999spread}
+Lisa~M. Marvel, Charles~G. Boncelet, and Charles~T. Retter.
+\newblock Spread spectrum image steganography.
+\newblock {\em IEEE Transactions on Image Processing}, 8(8):1075--1083, 1999.
+
+\bibitem{oppenheim1981importance}
+Alan~V. Oppenheim and Jae~S. Lim.
+\newblock The importance of phase in signals.
+\newblock {\em Proceedings of the IEEE}, pages 529--541, 1981.
+
+\bibitem{kovesi1999image}
+Peter Kovesi.
+\newblock Image features from phase congruency.
+\newblock {\em Videre: Journal of Computer Vision Research}, 1(3):1--26, 1999.
+
+\bibitem{pitas1996applying}
+I.~Pitas.
+\newblock A method for signature casting on digital images.
+\newblock In {\em Proceedings of IEEE International Conference on Image
+  Processing}, volume~3, pages 215--218, 1996.
+
+\bibitem{harris1978use}
+Fredric~J. Harris.
+\newblock On the use of windows for harmonic analysis with the discrete fourier
+  transform.
+\newblock {\em Proceedings of the IEEE}, 66(1):51--83, 1978.
+
+\bibitem{cooley1965algorithm}
+James~W. Cooley and John~W. Tukey.
+\newblock An algorithm for the machine calculation of complex fourier series.
+\newblock {\em Mathematics of Computation}, 19(90):297--301, 1965.
+
+\bibitem{podilchuk2001image}
+Christine~I. Podilchuk and Wenjun Zeng.
+\newblock Image-adaptive watermarking using visual models.
+\newblock {\em IEEE Journal on Selected Areas in Communications},
+  16(4):525--539, 1998.
+
+\bibitem{chen2001quantization}
+Brian Chen and Gregory~W. Wornell.
+\newblock Quantization index modulation: A class of provably good methods for
+  digital watermarking and information embedding.
+\newblock {\em IEEE Transactions on Information Theory}, 47(4):1423--1443,
+  2001.
+
+\bibitem{barni2001improved}
+M.~Barni, F.~Bartolini, V.~Cappellini, and A.~Piva.
+\newblock A dct-domain system for robust image watermarking.
+\newblock {\em Signal Processing}, 66(3):357--372, 1998.
+
+\bibitem{oppenheim1999discrete}
+Alan~V. Oppenheim and Ronald~W. Schafer.
+\newblock {\em Discrete-Time Signal Processing}.
+\newblock Prentice Hall, 2nd edition, 1999.
+
+\bibitem{kutter1999digital}
+Martin Kutter.
+\newblock Digital signature of color images using amplitude modulation.
+\newblock In {\em Storage and Retrieval for Image and Video Databases}, volume
+  3022, pages 518--526, 1999.
+
+\bibitem{solachidis2004fourier}
+V.~Solachidis and I.~Pitas.
+\newblock Circularly symmetric watermark embedding in 2-d fourier domain.
+\newblock {\em IEEE Transactions on Image Processing}, pages 1741--1753, 2004.
+
+\bibitem{cox2007}
+Ingemar~J. Cox, Matthew~L. Miller, Jeffrey~A. Bloom, Jessica Fridrich, and Ton
+  Kalker.
+\newblock {\em Digital Watermarking and Steganography}.
+\newblock Morgan Kaufmann, 2nd edition, 2007.
+
+\bibitem{Piva2002}
+Mauro Barni, Franco Bartolini, and Alessandro Piva.
+\newblock Multichannel watermarking of color images.
+\newblock {\em IEEE Transactions on Circuits and Systems for Video Technology},
+  12(2):142--156, 2002.
+
+\bibitem{johnson1998steganography}
+Neil~F. Johnson and Sushil Jajodia.
+\newblock Steganography: Seeing the unseen.
+\newblock In {\em IEEE Computer}, pages 26--34, 1998.
+
+\bibitem{westfeld2001f5}
+Andreas Westfeld.
+\newblock {F5} --- a steganographic algorithm: High capacity despite better
+  steganalysis.
+\newblock pages 289--302, 2001.
+
+\bibitem{boroumand2019deep}
+Mehdi Boroumand, Mo~Chen, and Jessica Fridrich.
+\newblock Deep residual network for steganalysis of digital images.
+\newblock volume~14, pages 1181--1193, 2019.
+
+\bibitem{xu2016structural}
+Guanshuo Xu, Han-Zhou Wu, and Yun-Qing Shi.
+\newblock Structural design of convolutional neural networks for steganalysis.
+\newblock volume~23, pages 708--712, 2016.
+
+\bibitem{yedroudj2018yenet}
+Mehdi Yedroudj, Frederic Comby, and Marc Chaumont.
+\newblock Yedroudj-net: An efficient cnn for spatial steganalysis.
+\newblock In {\em IEEE International Conference on Acoustics, Speech and Signal
+  Processing (ICASSP)}, pages 2092--2096, 2018.
+
+\bibitem{hayes2017}
+Jamie Hayes and George Danezis.
+\newblock Generating steganographic images via adversarial training.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2017.
+
+\bibitem{ye2017}
+Jian Ye, Jiangqun Ni, Yang Yi, and Dengpan Ye.
+\newblock Deep learning hierarchical representations for image steganalysis.
+\newblock {\em IEEE Transactions on Information Forensics and Security},
+  12(11):2545--2557, 2017.
+
+\bibitem{zhu2018hidden}
+Jiren Zhu, Russell Kaplan, Justin Johnson, and Li~Fei-Fei.
+\newblock Hidden: Hiding data with deep networks.
+\newblock In {\em Proceedings of the European Conference on Computer Vision
+  (ECCV)}, pages 682--697, Cham, Switzerland, 2018. Springer.
+
+\bibitem{baluja2017hiding}
+Shumeet Baluja.
+\newblock Hiding images in plain sight: Deep steganography.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  volume~30, 2017.
+
+\bibitem{goodfellow2014generative}
+Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
+  Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative adversarial nets.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  volume~27, 2014.
+
+\bibitem{zhang2019steganogan}
+Kevin~Alex Zhang, Alfredo Cuesta-Infante, Lei Xu, and Kalyan Veeramachaneni.
+\newblock {SteganoGAN}: High capacity image steganography with {GANs}.
+\newblock In {\em arXiv preprint arXiv:1901.03892}, 2019.
+
+\bibitem{huang2017densely}
+Gao Huang, Zhuang Liu, Laurens van~der Maaten, and Kilian~Q. Weinberger.
+\newblock Densely connected convolutional networks.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 4700--4708, 2017.
+
+\bibitem{das2021redmark}
+Souvik Das, Chia-Yu Lin, and Hung-Yu Wei.
+\newblock {ReDMark}: Framework for residual diffusion watermarking based on
+  deep neural networks.
+\newblock In {\em Expert Systems with Applications}, volume 166, page 114085.
+  Elsevier, 2021.
+
+\bibitem{ronneberger2015unet}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock {U-Net}: Convolutional networks for biomedical image segmentation.
+\newblock In {\em International Conference on Medical Image Computing and
+  Computer-Assisted Intervention (MICCAI)}, pages 234--241. Springer, 2015.
+
+\bibitem{shin2017jpeg}
+Richard Shin and Dawn Song.
+\newblock {JPEG}-resistant adversarial images.
+\newblock In {\em NIPS 2017 Workshop on Machine Learning and Computer
+  Security}, 2017.
+
+\bibitem{jaderberg2015spatial}
+Max Jaderberg, Karen Simonyan, Andrew Zisserman, and Koray Kavukcuoglu.
+\newblock Spatial transformer networks.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  volume~28, 2015.
+
+\bibitem{lu2021large}
+Chaoning Zhang, Philipp Benz, Adil Karjauv, Geng Sun, and In~So Kweon.
+\newblock Udh: Universal deep hiding for steganography, watermarking, and light
+  field messaging.
+\newblock {\em Advances in Neural Information Processing Systems},
+  33:10223--10234, 2020.
+
+\bibitem{dinh2017density}
+Laurent Dinh, Jascha Sohl-Dickstein, and Samy Bengio.
+\newblock {\em Density estimation using Real-valued Non-Volume Preserving (Real
+  NVP) transformations}.
+\newblock 2017.
+
+\bibitem{luo2020distortion}
+Xiyang Luo, Ruohan Zhan, Chi-Hao Chang, Feng Liu, and Prasant Mohapatra.
+\newblock Distortion agnostic deep watermarking.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, pages 13548--13557, 2020.
+
+\bibitem{zhang2020udh}
+Chaoning Zhang, Philipp Benz, Adil Karjauv, Geng Sun, and In~So Kweon.
+\newblock {UDH}: Universal deep hiding for steganography, watermarking, and
+  light field messaging.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  volume~33, pages 10223--10234, 2020.
+
+\bibitem{ahmadi2020redmark}
+Mahdi Ahmadi, Alireza Norouzi, Nader Karimi, Shadrokh Samavi, and Ali Emami.
+\newblock {ReDMark}: Framework for residual diffusion watermarking based on
+  deep neural networks.
+\newblock {\em Expert Systems with Applications}, 146:113157, 2020.
+
+\bibitem{fernandez2023stable}
+Pierre Fernandez, Guillaume Couairon, Herv\'{e} J\'{e}gou, Matthijs Douze, and
+  Ted Furon.
+\newblock The stable signature: Rooting watermarks in latent diffusion models.
+\newblock In {\em IEEE/CVF International Conference on Computer Vision (ICCV)},
+  2023.
+
+\bibitem{wang2004image}
+Zhou Wang, Alan~Conrad Bovik, Hamid~Rahim Sheikh, and Eero~P. Simoncelli.
+\newblock Image quality assessment: From error visibility to structural
+  similarity.
+\newblock {\em IEEE Transactions on Image Processing}, 13(4):600--612, 2004.
+
+\end{thebibliography}
