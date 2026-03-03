@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  2 MAR 2026 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.21)  3 MAR 2026 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -925,7 +925,7 @@ Package hyperref Info: Link coloring OFF on input line 28.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<university logo.jpg, id=388, 860.21375pt x 860.21375pt>
+<university logo.jpg, id=384, 860.21375pt x 860.21375pt>
 File: university logo.jpg Graphic file (type jpg)
 <use university logo.jpg>
 Package pdftex.def Info: university logo.jpg  used on input line 36.
@@ -987,7 +987,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 ...assical Framework}{46}{subsection.2.7.11}
+l.126 ... Steganographic Systems}{46}{section.2.8}
                                                   % [1
 
 ]
@@ -1033,7 +1033,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 [9]
 Chapter 2.
-<triangle.png, id=650, 2071.74pt x 977.90344pt>
+<triangle.png, id=644, 2071.74pt x 977.90344pt>
 File: triangle.png Graphic file (type png)
 <use triangle.png>
 Package pdftex.def Info: triangle.png  used on input line 202.
@@ -1045,7 +1045,7 @@ Package pdftex.def Info: triangle.png  used on input line 202.
 ]
 
 [11 <./triangle.png (PNG copy)>]
-<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=668, 204.765pt x 116
+<Frequency-regions-of-88-block-2D-DCT-coefficients.png, id=663, 204.765pt x 116
 .8365pt>
 File: Frequency-regions-of-88-block-2D-DCT-coefficients.png Graphic file (type 
 png)
@@ -1056,7 +1056,7 @@ Package pdftex.def Info: Frequency-regions-of-88-block-2D-DCT-coefficients.png
 
 
 [12 <./Frequency-regions-of-88-block-2D-DCT-coefficients.png>]
-<DCT 8 blocks devision.png, id=676, 522.45187pt x 454.69875pt>
+<DCT 8 blocks devision.png, id=671, 522.45187pt x 454.69875pt>
 File: DCT 8 blocks devision.png Graphic file (type png)
 <use DCT 8 blocks devision.png>
 Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 309.
@@ -1064,7 +1064,7 @@ Package pdftex.def Info: DCT 8 blocks devision.png  used on input line 309.
 
 
 [13{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
-<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=689, 214.8025pt x 218.
+<DC-and-AC-coefficient-on-DCT-Transformation (1).png, id=684, 214.8025pt x 218.
 8175pt>
 File: DC-and-AC-coefficient-on-DCT-Transformation (1).png Graphic file (type pn
 g)
@@ -1075,7 +1075,7 @@ sed on input line 354.
 
 
 [14 <./DCT 8 blocks devision.png>]
-<dct embeding process.png, id=701, 770.88pt x 437.38406pt>
+<dct embeding process.png, id=696, 770.88pt x 437.38406pt>
 File: dct embeding process.png Graphic file (type png)
 <use dct embeding process.png>
 Package pdftex.def Info: dct embeding process.png  used on input line 373.
@@ -1087,7 +1087,7 @@ cess.png (PNG copy)>]
 
 [16]
 <The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wavelet
-.png, id=722, 831.105pt x 334.24875pt>
+.png, id=717, 831.105pt x 334.24875pt>
 File: The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wa
 velet.png Graphic file (type png)
 <use The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-and-HH-by-1-level-wav
@@ -1095,7 +1095,7 @@ elet.png>
 Package pdftex.def Info: The-image-is-decomposed-into-four-sub-bands-LL-HL-LH-a
 nd-HH-by-1-level-wavelet.png  used on input line 443.
 (pdftex.def)             Requested size: 307.2929pt x 123.58339pt.
-<dwt decomposition.png, id=723, 1413.28pt x 770.88pt>
+<dwt decomposition.png, id=718, 1413.28pt x 770.88pt>
 File: dwt decomposition.png Graphic file (type png)
 <use dwt decomposition.png>
 Package pdftex.def Info: dwt decomposition.png  used on input line 452.
@@ -1106,7 +1106,7 @@ Package pdftex.def Info: dwt decomposition.png  used on input line 452.
 avelet.png> <./dwt decomposition.png (PNG copy)>]
 
 [18]
-<figure_2Z_dft.png, id=755, 640.2465pt x 618.894pt>
+<figure_2Z_dft.png, id=750, 640.2465pt x 618.894pt>
 File: figure_2Z_dft.png Graphic file (type png)
 <use figure_2Z_dft.png>
 Package pdftex.def Info: figure_2Z_dft.png  used on input line 571.
@@ -1114,7 +1114,7 @@ Package pdftex.def Info: figure_2Z_dft.png  used on input line 571.
 
 
 [19]
-<dft_magnitude_spectrum.png, id=770, 759.91905pt x 367.8543pt>
+<dft_magnitude_spectrum.png, id=764, 759.91905pt x 367.8543pt>
 File: dft_magnitude_spectrum.png Graphic file (type png)
 <use dft_magnitude_spectrum.png>
 Package pdftex.def Info: dft_magnitude_spectrum.png  used on input line 613.
@@ -1138,8 +1138,6 @@ et. Un-less the em-bed-ding do-main is rotation-invariant,
 [24]
 
 [25]
-
-[26]
 Overfull \hbox (3.38113pt too wide) in paragraph at lines 1103--1111
 \T1/lmr/m/n/12 Embedding frag-ments across dif-fer-ent trans-form do-mains pro-
 vides com-ple-men-tary ro-bust-ness: spatial-
@@ -1147,21 +1145,23 @@ vides com-ple-men-tary ro-bust-ness: spatial-
 
 
 
-[27]
+[26]
 
-[28]
+[27]
 Overfull \hbox (25.6532pt too wide) in paragraph at lines 1226--1242
  [][] 
  []
 
 
 
-[29]
+[28]
 
-[30]
+[29]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 1414.
 
+
+[30]
 
 [31]
 
@@ -1169,14 +1169,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 [33]
 
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1774.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1774.
+
+
+
 [34]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1774.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 1774.
-
-
 
 [35]
 
@@ -1186,8 +1186,6 @@ e 1933.
 
 
 [36]
-
-[37]
 Underfull \hbox (badness 10000) in paragraph at lines 2010--2010
 []|\T1/lmr/bx/n/10.95 Degradation
  []
@@ -1284,4 +1282,318 @@ Underfull \hbox (badness 10000) in paragraph at lines 2029--2030
 
 
 Underfull \hbox (badness 2772) in paragraph at lines 2032--2033
-\T1/lmr/m/n/10.95 (Eq. []2.34[]) 
+\T1/lmr/m/n/10.95 (Eq. []2.33[]) +
+ []
+
+
+Overfull \hbox (4.68802pt too wide) in paragraph at lines 2034--2035
+[]|\T1/lmr/m/n/10.95 Redundancy,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2034--2035
+\T1/lmr/m/n/10.95 frag-men-ta-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2035--2036
+[]|\T1/lmr/m/n/10.95 Distributed frag-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2035--2036
+\T1/lmr/m/n/10.95 ments max-imise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2038--2039
+[]|\T1/lmr/m/n/10.95 Interpolation
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 2038--2039
+\T1/lmr/m/n/10.95 (Eq. []2.36[]) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2039--2040
+[]|\T1/lmr/m/n/10.95 Block mis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2039--2040
+\T1/lmr/m/n/10.95 align-ment +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2040--2041
+[]|\T1/lmr/m/n/10.95 Invariant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2040--2041
+\T1/lmr/m/n/10.95 do-mains,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2041--2042
+[]|\T1/lmr/m/n/10.95 Multi-scale re-dun-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2041--2042
+\T1/lmr/m/n/10.95 dant em-bed-ding
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2044--2045
+[]|\T1/lmr/m/n/10.95 Coordinate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2044--2045
+\T1/lmr/m/n/10.95 trans-form
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 2044--2045
+\T1/lmr/m/n/10.95 (Eq. []2.37[]) +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2045--2046
+[]|\T1/lmr/m/n/10.95 Global syn-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2045--2046
+\T1/lmr/m/n/10.95 chro-ni-sa-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2046--2047
+[]|\T1/lmr/m/n/10.95 Log-polar
+ []
+
+
+Underfull \hbox (badness 1924) in paragraph at lines 2046--2047
+\T1/lmr/m/n/10.95 DFT, tem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2047--2048
+[]|\T1/lmr/m/n/10.95 DFT mag-ni-tude
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2049--2050
+[]|\T1/lmr/m/n/10.95 Compound
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2051
+[]|\T1/lmr/m/n/10.95 Sequential
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2051
+\T1/lmr/m/n/10.95 com-po-si-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2051--2052
+[]|\T1/lmr/m/n/10.95 Cascaded
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2052--2053
+[]|\T1/lmr/m/n/10.95 Structured
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2052--2053
+\T1/lmr/m/n/10.95 re-dun-dancy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2059
+[]|\T1/lmr/m/n/10.95 Low dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2059
+\T1/lmr/m/n/10.95 tor-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2058--2059
+\T1/lmr/m/n/10.95 struc-tural
+ []
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 2059--2060
+[]|\T1/lmr/m/n/10.95 Low per-coefficient
+ []
+
+
+Overfull \hbox (1.06279pt too wide) in paragraph at lines 2083--2084
+\T1/lmr/m/n/12 The lit-er-a-ture re-viewed in this chap-ter demon-strates sig-n
+if-i-cant progress in the field of im-age steganog-
+ []
+
+
+
+[37]
+
+[38]
+<Comparison.png, id=1041, 2826.56pt x 1541.76pt>
+File: Comparison.png Graphic file (type png)
+<use Comparison.png>
+Package pdftex.def Info: Comparison.png  used on input line 2101.
+(pdftex.def)             Requested size: 435.3303pt x 237.44118pt.
+
+
+[39]
+
+[40 <./Comparison.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 2224.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 2224.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 2224.
+
+
+[41]
+Overfull \hbox (8.19243pt too wide) in paragraph at lines 2310--2319
+[] []\T1/lmr/bx/n/12 Key con-tri-bu-tions.[] \T1/lmr/m/n/12 The pri-mary in-no-
+va-tion in SteganoGAN is a rig-or-ous treat-ment of the capacity--
+ []
+
+
+
+[42]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2348.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2348.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2363.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 2363.
+
+
+
+[43]
+
+[44]
+
+[45]
+
+[46]
+
+[47]
+
+[48]
+
+[49]
+
+[50]
+
+[51]
+
+[52]
+Chapter 3.
+
+
+[53
+
+]
+
+[54]
+
+[55]
+Overfull \hbox (6.92679pt too wide) in paragraph at lines 3171--3171
+|[]\T1/lmr/bx/n/17.28 Computational Com-plex-ity and Prac-ti-cal Con-sid-er-a-t
+ions| 
+ []
+
+
+
+[56]
+
+[57]
+Chapter 4.
+
+
+[58
+
+]
+Chapter 5.
+
+
+[59
+
+]
+Chapter 6.
+(./main.bbl
+
+[60
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+0.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+[61
+
+]
+
+[62]
+
+[63])
+
+[64] (./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3505ED2D3D01A02C095DF59AE30A54A6;21457.
+ ) 
+Here is how much of TeX's memory you used:
+ 34232 strings out of 475178
+ 793026 string characters out of 5766539
+ 1290556 words of memory out of 5000000
+ 56326 multiletter control sequences out of 15000+600000
+ 668985 words of font info for 102 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 84i,19n,91p,904b,2320s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
+7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (65 pages, 16568319 bytes).
+PDF statistics:
+ 1408 PDF objects out of 1440 (max. 8388607)
+ 1263 compressed objects within 13 object streams
+ 321 named destinations out of 1000 (max. 500000)
+ 820 words of extra memory for PDF output out of 10000 (max. 10000000)
+

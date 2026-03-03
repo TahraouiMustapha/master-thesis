@@ -994,64 +994,64 @@
 	coefficients for reliable spreading, limiting the practical payload size.
 	
 	% ----------------------------------------------------------
-	\subsection{Adaptive Embedding and Perceptual Masking}
-	\label{subsec:adaptive}
-	% ----------------------------------------------------------
-	
-	Adaptive embedding methods adjust the embedding strength locally based on image content,
-	exploiting perceptual masking properties of the human visual system (HVS) to embed more
-	information where distortion is less visible and less where it is more noticeable
-	\cite{podilchuk2001image}.
-	This strategy simultaneously improves imperceptibility and, in some implementations,
-	robustness, because stronger embedding in textured or edge-rich regions is harder for
-	processing operations to fully suppress.
-	
-	\subsubsection{Texture and Edge Masking}
-	
-	The HVS is less sensitive to luminance changes in regions of high spatial activity—
-	such as textured surfaces, edges, and complex patterns—than in flat, homogeneous
-	areas \cite{gonzalez2008digital}.
-	Adaptive steganographic methods leverage this by computing a local activity measure
-	$\sigma^2(b)$ for each image block $b$ (e.g., the variance of DCT AC coefficients)
-	and scaling the embedding strength accordingly:
-	
-	\begin{equation}
-		\alpha(b) = \alpha_0 \cdot f\!\left(\sigma^2(b)\right),
-		\label{eq:adaptive_strength}
-	\end{equation}
-	
-	where $f(\cdot)$ is a monotonically increasing function and $\alpha_0$ is a base
-	strength parameter \cite{podilchuk2001image, cox2007}.
-	Blocks with higher texture activity receive stronger embedding, increasing local
-	robustness in those regions while limiting visible distortion in smooth areas.
-	
-	\subsubsection{Frequency-Selective Masking}
-	
-	Complementary to spatial masking is frequency-domain masking, in which the embedding
-	energy is concentrated in mid-frequency DCT or DWT coefficients that fall within the
-	HVS sensitivity range \cite{barni2001improved}.
-	The JPEG quantization matrix provides a useful proxy for perceptual importance:
-	coefficients assigned a larger quantization step are less perceptually significant
-	and can therefore tolerate stronger embedding \cite{petitcolas1999information}.
-	By aligning embedding choices with the JPEG quantization structure, adaptive DCT
-	methods also gain a secondary benefit: the embedded signal is less likely to be
-	removed by JPEG compression, because only the coefficients that survive compression
-	at the target quality factor are used for embedding.
-	
-	\subsubsection{Just-Noticeable Difference Models}
-	
-	More principled approaches model the maximum imperceptible modification at each
-	coefficient using just-noticeable difference (JND) thresholds derived from
-	psychophysical experiments \cite{cox2007digital}.
-	A JND model $J(u,v)$ specifies the maximum change to coefficient $F(u,v)$ that
-	remains below human detection threshold.
-	Embedding is then constrained so that $|\Delta F(u,v)| \leq J(u,v)$, guaranteeing
-	imperceptibility by construction.
-	Podilchuk and Zeng \cite{podilchuk2001image} demonstrated that JND-constrained watermarking
-	achieves significantly better imperceptibility-robustness trade-offs than fixed-strength
-	embedding, and their framework has been adapted for steganographic applications.
-	
-	% ----------------------------------------------------------
+%	\subsection{Adaptive Embedding and Perceptual Masking}
+%	\label{subsec:adaptive}
+%	% ----------------------------------------------------------
+%	
+%	Adaptive embedding methods adjust the embedding strength locally based on image content,
+%	exploiting perceptual masking properties of the human visual system (HVS) to embed more
+%	information where distortion is less visible and less where it is more noticeable
+%	\cite{podilchuk2001image}.
+%	This strategy simultaneously improves imperceptibility and, in some implementations,
+%	robustness, because stronger embedding in textured or edge-rich regions is harder for
+%	processing operations to fully suppress.
+%	
+%	\subsubsection{Texture and Edge Masking}
+%	
+%	The HVS is less sensitive to luminance changes in regions of high spatial activity—
+%	such as textured surfaces, edges, and complex patterns—than in flat, homogeneous
+%	areas \cite{gonzalez2008digital}.
+%	Adaptive steganographic methods leverage this by computing a local activity measure
+%	$\sigma^2(b)$ for each image block $b$ (e.g., the variance of DCT AC coefficients)
+%	and scaling the embedding strength accordingly:
+%	
+%	\begin{equation}
+%		\alpha(b) = \alpha_0 \cdot f\!\left(\sigma^2(b)\right),
+%		\label{eq:adaptive_strength}
+%	\end{equation}
+%	
+%	where $f(\cdot)$ is a monotonically increasing function and $\alpha_0$ is a base
+%	strength parameter \cite{podilchuk2001image, cox2007}.
+%	Blocks with higher texture activity receive stronger embedding, increasing local
+%	robustness in those regions while limiting visible distortion in smooth areas.
+%	
+%	\subsubsection{Frequency-Selective Masking}
+%	
+%	Complementary to spatial masking is frequency-domain masking, in which the embedding
+%	energy is concentrated in mid-frequency DCT or DWT coefficients that fall within the
+%	HVS sensitivity range \cite{barni2001improved}.
+%	The JPEG quantization matrix provides a useful proxy for perceptual importance:
+%	coefficients assigned a larger quantization step are less perceptually significant
+%	and can therefore tolerate stronger embedding \cite{petitcolas1999information}.
+%	By aligning embedding choices with the JPEG quantization structure, adaptive DCT
+%	methods also gain a secondary benefit: the embedded signal is less likely to be
+%	removed by JPEG compression, because only the coefficients that survive compression
+%	at the target quality factor are used for embedding.
+%	
+%	\subsubsection{Just-Noticeable Difference Models}
+%	
+%	More principled approaches model the maximum imperceptible modification at each
+%	coefficient using just-noticeable difference (JND) thresholds derived from
+%	psychophysical experiments \cite{cox2007digital}.
+%	A JND model $J(u,v)$ specifies the maximum change to coefficient $F(u,v)$ that
+%	remains below human detection threshold.
+%	Embedding is then constrained so that $|\Delta F(u,v)| \leq J(u,v)$, guaranteeing
+%	imperceptibility by construction.
+%	Podilchuk and Zeng \cite{podilchuk2001image} demonstrated that JND-constrained watermarking
+%	achieves significantly better imperceptibility-robustness trade-offs than fixed-strength
+%	embedding, and their framework has been adapted for steganographic applications.
+%	
+%	% ----------------------------------------------------------
 	\subsection{Fragmentation, Redundancy, and Distributed Embedding}
 	\label{subsec:fragmentation}
 	% ----------------------------------------------------------
