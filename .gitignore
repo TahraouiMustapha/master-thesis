@@ -1,4 +1,9 @@
- 
+
+attacked_images_lsb/
+cover_image.png 
+originalImg.png
+stego_lsb.png
+
 main.aux
 main.bbl
 main.blg
